@@ -1,0 +1,14 @@
+# ninja log v5
+7	452	0	build.ninja	3e9b548a3cd4298e
+0	286	0	CMakeFiles/xmd-actions.dir/xmd-actions.c.o	afd0041ea9b42fd4
+288	558	0	C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/build/intermediates/cmake/debug/obj/x86_64/libxmd-actions.so	65022ed8e66f054c
+2	127	0	CMakeFiles/xmd-actions.dir/xmd-actions.c.o	afd0041ea9b42fd4
+127	202	0	C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/build/intermediates/cmake/debug/obj/x86_64/libxmd-actions.so	65022ed8e66f054c
+4	232	0	CMakeFiles/xmd-actions.dir/xmd-actions.c.o	afd0041ea9b42fd4
+233	364	0	C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/build/intermediates/cmake/debug/obj/x86_64/libxmd-actions.so	65022ed8e66f054c
+3	446	0	CMakeFiles/xmd-actions.dir/xmd-actions.c.o	afd0041ea9b42fd4
+447	557	0	C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/build/intermediates/cmake/debug/obj/x86_64/libxmd-actions.so	65022ed8e66f054c
+3	157	0	CMakeFiles/xmd-actions.dir/xmd-actions.c.o	afd0041ea9b42fd4
+158	249	0	C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/build/intermediates/cmake/debug/obj/x86_64/libxmd-actions.so	65022ed8e66f054c
+3	1534	0	CMakeFiles/xmd-actions.dir/xmd-actions.c.o	afd0041ea9b42fd4
+1535	1838	0	C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/build/intermediates/cmake/debug/obj/x86_64/libxmd-actions.so	65022ed8e66f054c

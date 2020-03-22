@@ -1,0 +1,3 @@
+C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/xmd-actions.dir
+C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir

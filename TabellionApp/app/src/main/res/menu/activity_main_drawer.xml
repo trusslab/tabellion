@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/nav_start_signing">
+        <menu>
+            <item
+                android:id="@+id/nav_new_document"
+                android:icon="@drawable/new_document"
+                android:title="@string/nav_new_document"/>
+            <item
+                android:id="@+id/nav_how_to"
+                android:icon="@drawable/how_to"
+                android:title="@string/nav_how_to"/>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pendingToSign"
+            android:icon="@drawable/pending_to_sign"
+            android:title="@string/nav_pending_to_sign" />
+        <item
+            android:id="@+id/nav_waitForFinishing"
+            android:icon="@drawable/wait_for_finishing"
+            android:title="@string/nav_wait_for_finishing" />
+        <item
+            android:id="@+id/nav_historyContracts"
+            android:icon="@drawable/history_contracts"
+            android:title="@string/nav_history_contracts" />
+    </group>
+
+    <item android:title="@string/nav_discover_more">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_share" />
+        </menu>
+    </item>
+
+</menu>

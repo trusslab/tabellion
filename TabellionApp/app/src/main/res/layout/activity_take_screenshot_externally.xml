@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/take_screenshot_externally_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakeScreenshotExternally">
+
+    <LinearLayout
+        android:id="@+id/signing_linearLayout_overlap_review_note"
+        android:layout_width="1080dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/signing_temp_textView"
+        android:layout_margin="4dp"
+        android:background="@color/design_default_color_secondary"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_mark"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/signing_linearLayout_overlap_review_note"
+            android:text="@string/user_is_in_review_session_during_signing"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

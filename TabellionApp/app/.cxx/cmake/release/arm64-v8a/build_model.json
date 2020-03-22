@@ -1,0 +1,72 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt",
+      "sdkFolder": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app",
+      "makeFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\src\\main\\cpp\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\.cxx",
+      "cxxFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx",
+      "ndkFolder": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "release",
+    "soFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\build\\intermediates\\cmake\\release\\lib",
+    "objFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\build\\intermediates\\cmake\\release\\obj",
+    "jsonFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cmake\\release",
+    "gradleBuildOutputFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cxx\\release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 23,
+  "cxxBuildFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cmake\\release\\arm64-v8a",
+  "jsonFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cmake\\release\\arm64-v8a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cxx\\release\\arm64-v8a",
+  "objFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a",
+  "buildCommandFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cmake\\release\\arm64-v8a\\build_command.txt",
+  "buildOutputFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cmake\\release\\arm64-v8a\\build_output.txt",
+  "modelOutputFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cmake\\release\\arm64-v8a\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cxx\\release\\arm64-v8a\\CMakeLists.txt",
+    "toolchainWrapperFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cxx\\release\\arm64-v8a\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cxx\\release\\arm64-v8a\\build_generation_state.json",
+    "cacheKeyFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cxx\\release\\arm64-v8a\\compiler_cache_key.json",
+    "compilerCacheUseFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cxx\\release\\arm64-v8a\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cxx\\release\\arm64-v8a\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cxx\\release\\arm64-v8a\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cmake\\release\\arm64-v8a\\json_generation_record.json",
+  "compileCommandsJsonFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cmake\\release\\arm64-v8a\\compile_commands.json"
+}

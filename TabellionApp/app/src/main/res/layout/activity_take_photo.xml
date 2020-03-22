@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.camerakit.CameraKitView
+        android:id="@+id/activity_take_photo_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:id="@+id/activity_take_photo_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    
+    <ImageView
+        android:id="@+id/activity_take_photo_shutter"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/shutter"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/activity_take_photo_confirm"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/correct"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/activity_take_photo_cancel"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/wrong"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="30dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
