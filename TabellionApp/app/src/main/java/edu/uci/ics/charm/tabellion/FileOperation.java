@@ -19,7 +19,7 @@ import java.nio.channels.FileChannel;
 /*
 Created Date: 02/05/2019
 Created By: Myles Liu
-Last Modified: 03/31/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -51,25 +51,6 @@ public class FileOperation {
             }
             // DownloadsProvider
             else if (isDownloadsDocument(uri)) {
-
-                /*
-                final String id = DocumentsContract.getDocumentId(uri);
-
-                String[] contentUriPrefixesToTry = new String[]{
-                        "content://downloads/public_downloads",
-                        "content://downloads/my_downloads"
-                };
-
-                for (String contentUriPrefix : contentUriPrefixesToTry) {
-                    Uri contentUri = ContentUris.withAppendedId(Uri.parse(contentUriPrefix), Long.valueOf(id));
-                    try {
-                        String path = getDataColumn(context, contentUri, null, null);
-                        if (path != null) {
-                            return path;
-                        }
-                    } catch (Exception e) {}
-                }
-                */
                 String fileName = getFilePath(context, uri);
                 Log.d(TAG, "The fileName(path included) is: " + Environment.getExternalStorageDirectory().toString() + "/Download/" + fileName);
                 if (fileName != null) {

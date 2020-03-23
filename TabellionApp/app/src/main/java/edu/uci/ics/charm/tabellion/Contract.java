@@ -3,7 +3,7 @@ package edu.uci.ics.charm.tabellion;
 /*
 Created Date: 01/23/2019
 Created By: Myles Liu
-Last Modified: 10/19/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
         1. For currentRole, 0 means offeror, 1 means offeree.  (Default is 0)
@@ -226,25 +226,6 @@ public class Contract {
             });
             downloadPage("Ndoc-" + i + ".png", connection, handler_for_remove_pending_download_num, i);
         }
-        /*
-        for(int i: pendingToDownalodReviewPagesNum){
-            Handler handler_for_remove_pending_download_num = new Handler(new Handler.Callback() {
-                @Override
-                public boolean handleMessage(Message msg) {
-                    if(msg.getData().getBoolean("is_success")){
-                        pendingToDownalodReviewPagesNum.remove(msg.getData().getInt("page_num"));
-                        Log.d("DownloadPages ", "Remaining(Review): " + pendingToDownalodReviewPagesNum);
-                    } else {
-                        Log.d(TAG, "Download failed when downloading: " + "Ndoc-review" +
-                                msg.getData().getInt("page_num") + ".png");
-                        setDownloadFailed(true);
-                    }
-                    return false;
-                }
-            });
-            downloadPage("Ndoc-review" + i + ".png", connection, handler_for_remove_pending_download_num, i);
-        }
-        */
         downloadLastPage(connection, handler);
     }
 
@@ -256,7 +237,6 @@ public class Contract {
     private void downloadLastPage(Connection connection, Handler handler){
         // 0 means last page
         downloadPage("Nlast-1.png", connection, handler, 0);
-        //downloadPage("Nlast-review-1.png", connection, handler, 0);
     }
 
     private void downloadPage(String fileName, Connection connection, Handler handler, int page_num){
@@ -278,10 +258,6 @@ public class Contract {
         pendingToDownloadPagesNum.remove(index);
     }
 
-    public void setOpened(boolean opened) {
-        isOpened = opened;
-    }
-
     public int getCurrentRole() {
         return currentRole;
     }
@@ -294,9 +270,6 @@ public class Contract {
         return createdDate;
     }
 
-    public boolean isOpened() {
-        return isOpened;
-    }
 
     public void syncStatus(Contract contractUsedToSync){
         // Should only be used for internal contract

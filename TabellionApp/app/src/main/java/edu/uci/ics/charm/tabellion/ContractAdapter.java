@@ -30,7 +30,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 /*
 Created Date: 01/24/2019
 Created By: Myles Liu
-Last Modified: 04/22/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -121,7 +121,7 @@ public class ContractAdapter extends RecyclerView.Adapter<ContractAdapter.ViewHo
                 final Contract currentContract = mContractList.get(holder.getAdapterPosition());
                 String inputData = editText.getText().toString();
                 if(!inputData.isEmpty()){
-                    currentContract.setTransitionTime(Integer.valueOf(inputData));
+                    currentContract.setTransitionTime(Integer.parseInt(inputData));
                 }
                 currentContract.setIsSwipeBackEnabled(checkBox.isChecked());
                 Log.d(TAG, "onCreateViewHolder: After checking isSwipeBackEnabled: " + currentContract.isSwipeBackEnabled());

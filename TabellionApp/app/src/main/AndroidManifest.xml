@@ -35,14 +35,6 @@
             android:name="edu.uci.ics.charm.tabellion.TakePhoto"
             android:exported="true" />
         <activity
-            android:name="edu.uci.ics.charm.tabellion.SigningActivityExternal"
-            android:exported="true" />
-        <activity
-            android:name="edu.uci.ics.charm.tabellion.TakeScreenshotExternally"
-            android:exported="true"
-            android:label=""
-            android:theme="@style/AppTheme.Transparent" />
-        <activity
             android:name="edu.uci.ics.charm.tabellion.LauncherActivity"
             android:theme="@style/AppTheme.Launcher">
             <intent-filter>

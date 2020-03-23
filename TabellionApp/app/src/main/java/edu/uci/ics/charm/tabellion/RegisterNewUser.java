@@ -59,7 +59,7 @@ import kotlin.jvm.functions.Function0;
 /*
 Created Date: 02/12/2019
 Created By: Myles Liu
-Last Modified: 10/14/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -360,20 +360,6 @@ public class RegisterNewUser extends AppCompatActivity implements Callback{
         executor = Executors.newSingleThreadExecutor();
         fragmentActivity = this;
 
-        // Should not init cipher here
-        /*
-        if (initCipher()) {
-            Log.d(TAG, "Cipher has been inited successfully (first try).");
-            //If the cipher is initialized successfully, then create a CryptoObject instance//
-            cryptoObject = new FingerprintManager.CryptoObject(cipher);
-
-            // Here, I’m referencing the FingerprintHandler class that we’ll create in the next section. This class will be responsible
-            // for starting the authentication process (via the startAuth method) and processing the authentication process events//
-            FingerprintHandler helper = new FingerprintHandler(this, this);
-            helper.startAuth(fingerprintManager, cryptoObject);
-        }
-        */
-
     }
 
     private boolean checkIfAnyBlank(){
@@ -578,43 +564,6 @@ public class RegisterNewUser extends AppCompatActivity implements Callback{
                                         finish();
                                     }
                                 });
-                                /*
-                                if(errorCode == BiometricPrompt.ERROR_NEGATIVE_BUTTON){
-                                    runOnUiThread(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            circularProgressButton.revertAnimation(new Function0<Unit>() {
-                                                @Override
-                                                public Unit invoke() {
-                                                    return null;
-                                                }
-                                            });
-                                        }
-                                    });
-                                } else {
-                                    runOnUiThread(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            new AlertDialog.Builder(context)
-                                                    .setTitle(R.string.notification)
-                                                    .setCancelable(false)
-                                                    .setMessage(getString(R.string.unknown_error_for_biometric))
-                                                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                                                        @Override
-                                                        public void onClick(DialogInterface dialog, int which) {
-                                                            Log.d(TAG, "onAuthenticationHelp: OK for Error has been clicked!");
-                                                            if(initCipher()){
-                                                                cryptoObject = new FingerprintManager.CryptoObject(cipher);
-                                                                FingerprintHandler helper = new FingerprintHandler(context, ic);
-                                                                Toast.makeText(context, getString(R.string.put_finger_on_sensor), Toast.LENGTH_LONG).show();
-                                                                helper.startAuth(fingerprintManager, cryptoObject);
-                                                            }
-                                                        }
-                                                    }).show();
-                                        }
-                                    });
-                                }
-                                */
                             }
 
                             @Override
@@ -659,40 +608,6 @@ public class RegisterNewUser extends AppCompatActivity implements Callback{
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                /*
-                Log.d(TAG, " onActivityResult: CurrentAPI is: " + android.os.Build.VERSION.SDK_INT);
-                if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-                    // Have a new biometric authentication interface for Android Pie
-                    final CancellationSignal cancellationSignal = new CancellationSignal();
-                    BiometricPrompt biometricPrompt = new BiometricPrompt.Builder(context)
-                            .setTitle(getString(R.string.biometric_title_register))
-                            .setSubtitle(getString(R.string.biometric_subtitle_register))
-                            .setDescription(getString(R.string.biometric_description_register))
-                            .setNegativeButton(getString(R.string.cancel), getMainExecutor(), new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    cancellationSignal.cancel();
-                                    circularProgressButton.revertAnimation(new Function0<Unit>() {
-                                        @Override
-                                        public Unit invoke() {
-                                            return null;
-                                        }
-                                    });
-                                }
-                            })
-                            .build();
-                    BiometricPrompt.CryptoObject cryptoObjectForPie = new BiometricPrompt.CryptoObject(cipher);
-                    BiometricPrompt.PromptInfo
-                    biometricPrompt.authenticate(cryptoObjectForPie, cancellationSignal, getMainExecutor(), new onAuthenticatedForPie());
-                } else {
-                    // Should have a UI here for fingerprint identification
-                    //If the cipher is initialized successfully, then create a CryptoObject instance//
-                    cryptoObject = new FingerprintManager.CryptoObject(cipher);
-                    FingerprintHandler helper = new FingerprintHandler(context, ic);
-                    Toast.makeText(context, getString(R.string.put_finger_on_sensor), Toast.LENGTH_LONG).show();
-                    helper.startAuth(fingerprintManager, cryptoObject);
-                }
-                */
             }
         }
     }

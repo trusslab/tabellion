@@ -46,7 +46,7 @@ import java.util.List;
 /*
 Created Date: 01/28/2019
 Created By: Myles Liu
-Last Modified: 10/19/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -65,8 +65,6 @@ public class MyApp extends Application {
     private PublicKey publicKey = null;
     private PrivateKey privateKey = null;
     private boolean isReRegistering = false;
-    private int statusChangeThreshold = 30; // seconds
-    private List<Thread> pendingJobs = new ArrayList<>();
     private boolean isWaitingForNetWork = false;
     private boolean isRefreshingOnMainActivity = false;
     private boolean transitionAndFreezingSwitch = true;
@@ -189,57 +187,6 @@ public class MyApp extends Application {
             addOrUpdateToCorrespondingContractList(tempContract);
         }
     }
-    /*
-    public void addOrUpdateToCorrespondingContractList(Contract temp_contract){
-        Log.d(TAG, "addOrUpdateToCorrespondingContractList: Got new temp_contract with id: " + temp_contract.getContractId() + " with status: " +
-                temp_contract.getContractStatus() + " with true status: " + getContractTrueStatus(temp_contract));
-        if(!getAllContractIDs().contains(temp_contract.getContractId())){
-            addAndSaveNewContractToCorrespondingContractList(temp_contract);
-        } else {
-            List<Contract> contractList = getSavedPendingToSignContractList();
-            int statusFromList = 0;
-            int contractOnlineStatus = getContractTrueStatus(temp_contract);
-            if(!isContractInContractList(temp_contract, contractList)){
-                statusFromList = 1;
-                contractList = getSavedInProgressContractList();
-                if(!isContractInContractList(temp_contract, contractList)){
-                    statusFromList = 2;
-                    contractList = getSavedHistoryContractList();
-                }
-            }
-            int indexOfContract = getIndexOfContractInList(temp_contract, contractList);
-            Contract tempContract = contractList.get(indexOfContract);
-            int contractLocalStatus = getContractTrueStatus(tempContract);
-
-            if(contractLocalStatus != contractOnlineStatus){
-                Log.d(TAG, "addOrUpdateToCorrespondingContractList: contractLocalStatus: " + contractLocalStatus);
-                if(statusFromList == 0){
-                    removeAndSaveContractFromPendingToSignContractListIfExist(temp_contract);
-                } else if (statusFromList == 1){
-                    removeAndSaveContractWaitForFinishContractListIfExist(temp_contract);
-                } else {
-                    removeAndSaveContractHistoryContractListIfExist(temp_contract);
-                }
-                tempContract.syncStatus(temp_contract);
-                addOrUpdateToCorrespondingContractList(tempContract);
-            } else {
-                tempContract.syncStatus(temp_contract);
-                contractList.remove(indexOfContract);
-                if(indexOfContract != 0){
-                    --indexOfContract;
-                }
-                contractList.add(indexOfContract, tempContract);
-                if(contractOnlineStatus == 0){
-                    saveContractList(contractList, "PendingToSignContractList", emailAddress);
-                } else if (contractOnlineStatus == 1){
-                    saveContractList(contractList, "InProgressContractList", emailAddress);
-                } else {
-                    saveContractList(contractList, "HistoryContractList", emailAddress);
-                }
-            }
-        }
-    }
-    */
 
     private boolean isContractInContractList(Contract contract, List<Contract> contractList){
         boolean result = false;
@@ -348,29 +295,6 @@ public class MyApp extends Application {
         } else {
             addAndSaveNewContractToHistoryContractList(contract);
         }
-        /*
-        if(contract.getContractStatus() == 0){
-            if(contract.getCurrentRole() == 0){
-                addAndSaveNewContractToPendingToSignContractList(contract);
-            } else {
-                addAndSaveNewContractToInProgressContractList(contract);
-            }
-        } else if(contract.getContractStatus() == 1){
-            if(contract.getCurrentRole() == 0){
-                addAndSaveNewContractToInProgressContractList(contract);
-            } else {
-                addAndSaveNewContractToPendingToSignContractList(contract);
-            }
-        } else if(contract.getContractStatus() == 2) {
-            addAndSaveNewContractToPendingToSignContractList(contract);
-        } else if(contract.getContractStatus() == 12){
-            addAndSaveNewContractToPendingToSignContractList(contract);
-        } else if(contract.getContractStatus() == 13){
-            addAndSaveNewContractToInProgressContractList(contract);
-        } else {
-            addAndSaveNewContractToHistoryContractList(contract);
-        }
-        */
     }
 
     public String getEmailAddress(){

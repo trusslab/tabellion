@@ -36,7 +36,7 @@ import javax.crypto.SecretKey;
 /*
 Created Date: 03/28/2019
 Created By: Myles Liu
-Last Modified: 03/30/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
  */
@@ -302,9 +302,10 @@ public class LauncherActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);  // Change not tested (03-22-2020)
         Log.d(TAG, "onActivityResult: requestCode: " + requestCode + ", resultCode: " + resultCode);
-        if(requestCode == RE_REGISTER_REQUEST){
-            if(resultCode == RESULT_OK){
+        if (requestCode == RE_REGISTER_REQUEST) {
+            if (resultCode == RESULT_OK) {
                 myApp.removeEmailFromReRegisterRequiredRecord(myApp.getEmailAddress());
                 startReRegisterProcess(false);
             } else {

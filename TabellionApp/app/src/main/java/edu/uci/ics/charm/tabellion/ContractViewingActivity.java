@@ -39,7 +39,7 @@ import kotlin.jvm.functions.Function0;
 /*
 Created Date: 01/31/2019
 Created By: Myles Liu
-Last Modified: 10/19/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -182,19 +182,18 @@ public class ContractViewingActivity extends AppCompatActivity {
             public boolean handleMessage(Message msg) {
                 if(msg.getData().getBoolean("is_success")){
                     timingLogger.addSplit("Download Complete");
-                    StringBuilder stringBuilder = new StringBuilder();
-                    stringBuilder.append("Contract id: ");
-                    stringBuilder.append(viewingContract.getContractId());
-                    stringBuilder.append("\n");
-                    stringBuilder.append("Contract name: ");
-                    stringBuilder.append(viewingContract.getContractName());
-                    stringBuilder.append("\n");
-                    stringBuilder.append("Download Time: ");
-                    stringBuilder.append(System.currentTimeMillis() - timeStampForStartDownloading.getTime());
-                    stringBuilder.append("\n");
-                    stringBuilder.append("========================================================");
-                    stringBuilder.append("\n");
-                    myApp.writeLogToFile(stringBuilder.toString(), viewingContract.getContractId()
+                    String stringBuilder = "Contract id: " +
+                            viewingContract.getContractId() +
+                            "\n" +
+                            "Contract name: " +
+                            viewingContract.getContractName() +
+                            "\n" +
+                            "Download Time: " +
+                            (System.currentTimeMillis() - timeStampForStartDownloading.getTime()) +
+                            "\n" +
+                            "========================================================" +
+                            "\n";
+                    myApp.writeLogToFile(stringBuilder, viewingContract.getContractId()
                             + "_download_log.txt", "downloading");
                     timingLogger.dumpToLog();
                     circularProgressButton.revertAnimation(new Function0<Unit>() {

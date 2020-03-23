@@ -35,7 +35,7 @@ import java.util.Objects;
 /*
 Created Date: 07/01/2019
 Created By: Myles Liu
-Last Modified: 07/01/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -210,17 +210,6 @@ public class TakePhoto extends AppCompatActivity {
         });
     }
 
-    /*
-    private int getCurrentCountOfPhotos(){
-        grantStoragePermission();
-        File path = new File(getExternalFilesDir(
-                Environment.DIRECTORY_DOWNLOADS) + "/" + temp_contract.getContractId()
-                + "/" + "offeror");
-        path.mkdirs();
-        return path.listFiles().length;
-    }
-    */
-
     private String saveImage(Bitmap capturedImage){
 
         File path = new File(getExternalFilesDir(
@@ -275,24 +264,6 @@ public class TakePhoto extends AppCompatActivity {
         return "";
     }
 
-    /*
-    private String saveImage(byte[] capturedImage){
-        int counter_of_photos = getCurrentCountOfPhotos();
-        File savedPhoto = new File(getExternalFilesDir(
-                Environment.DIRECTORY_DOWNLOADS) + "/" + temp_contract.getContractId()
-                + "/" + "offeror", "photo_" + counter_of_photos +".jpg");
-        try {
-            FileOutputStream outputStream = new FileOutputStream(savedPhoto.getPath());
-            outputStream.write(capturedImage);
-            outputStream.close();
-            return savedPhoto.getAbsolutePath();
-        } catch (java.io.IOException e) {
-            e.printStackTrace();
-        }
-        return "";
-    }
-    */
-
     private void setUpContractRelated(){
         contractNameInTabellion = receivedIntent.getStringExtra("contract_name_in_tabellion");
         setUpFakeTempContract();
@@ -317,17 +288,6 @@ public class TakePhoto extends AppCompatActivity {
         );
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-//        int b = decorView.getSystemUiVisibility();
-//        if ( (b | View.SYSTEM_UI_FLAG_LAYOUT_STABLE) == b) {
-//            Log.d("Saeed: ", "enabled1");
-//        }
-//        if ( (b | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION) == b) {
-//            Log.d("Saeed: ", "enabled2");
-//        }
-//        if ( (b | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN) == b) {
-//            Log.d("Saeed: ", "enabled3");
-//        }
 
     }
 

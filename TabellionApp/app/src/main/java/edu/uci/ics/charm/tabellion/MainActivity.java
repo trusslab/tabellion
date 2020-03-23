@@ -38,7 +38,7 @@ import jp.wasabeef.recyclerview.animators.FadeInLeftAnimator;
 /*
 Created Date: 01/23/2019
 Created By: Myles Liu
-Last Modified: 04/22/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -125,10 +125,6 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*
-                Snackbar.make(view, "Creating a new temp_contract...", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                        */
                 startActivity(new Intent(context, NewDocument.class));
                 // appendToTopContractList(new Contract("Example New Contract"));
             }
@@ -230,7 +226,7 @@ public class MainActivity extends AppCompatActivity
 
     private void checkIfAnyNewContract(){
         // Check if there is any new temp_contract for the user to sign
-        // This is not working at all!
+        // This is not working at all! (pending delete)
 
         String contractGsonData = getIntent().getStringExtra("contractFromOfferorFCM");
         if(contractGsonData != null){
@@ -255,7 +251,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void refreshContractList(List<Contract> newPendingToSignContractLists) {
-        // This function is not working properly!!!
+        // This function is not working properly in some situations!!! (pending fix)
         List<Integer> pendingDeletedContracts = new ArrayList<>();
         List<Integer> pendingAddedContracts = new ArrayList<>();
         for(Contract contract: contractList){
@@ -378,12 +374,14 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void appendToTopContractList(Contract contract){
+        // If not used, pending delete
         contractList.add(0, contract);
         contractAdapter.notifyItemInserted(0);
         recyclerView.smoothScrollToPosition(0);
     }
 
     private void deleteFromContractList(int position){
+        // If not used, pending delete
         contractList.remove(position);
         contractAdapter.notifyItemRemoved(position);
     }

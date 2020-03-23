@@ -37,7 +37,7 @@
   },
   {
     "level": "INFO",
-    "message": "- command changed from previous, will remove stale json folder",
+    "message": "- force flag, will remove stale json folder",
     "file": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
     "tag": "debug|x86"
   },

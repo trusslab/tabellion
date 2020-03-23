@@ -47,7 +47,7 @@ import javax.crypto.SecretKey;
 /*
 Created Date: 11/27/2019
 Created By: Myles Liu
-Last Modified: 11/27/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
  */
@@ -165,16 +165,6 @@ public class CommentActivity extends AppCompatActivity implements Callback {
                 } catch (CommentActivity.FingerprintException e) {
                     e.printStackTrace();
                 }
-
-//                if (initCipher()) {
-//                    //If the cipher is initialized successfully, then create a CryptoObject instance//
-//                    cryptoObject = new FingerprintManager.CryptoObject(cipher);
-//
-//                    // Here, I’m referencing the FingerprintHandler class that we’ll create in the next section. This class will be responsible
-//                    // for starting the authentication process (via the startAuth method) and processing the authentication process events//
-//                    FingerprintHandler helper = new FingerprintHandler(this);
-//                    helper.startAuth(fingerprintManager, cryptoObject);
-//                }
             }
         }
     }
@@ -306,18 +296,6 @@ public class CommentActivity extends AppCompatActivity implements Callback {
         );
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-//        int b = decorView.getSystemUiVisibility();
-//        if ( (b | View.SYSTEM_UI_FLAG_LAYOUT_STABLE) == b) {
-//            Log.d("Saeed: ", "enabled1");
-//        }
-//        if ( (b | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION) == b) {
-//            Log.d("Saeed: ", "enabled2");
-//        }
-//        if ( (b | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN) == b) {
-//            Log.d("Saeed: ", "enabled3");
-//        }
-
     }
 
     @Override

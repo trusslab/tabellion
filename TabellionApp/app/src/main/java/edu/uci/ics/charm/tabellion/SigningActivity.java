@@ -70,7 +70,7 @@ import javax.crypto.SecretKey;
 /*
 Created Date: 2018
 Created By: Saeed Mirzamohammadi
-Last Modified: 12/07/2019
+Last Modified: 03/22/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -560,17 +560,6 @@ public class SigningActivity extends AppCompatActivity implements Callback,
         logBuilder.append("\n");
         counterForTakingScreenShotAndSigning += System.currentTimeMillis() - timestamp.getTime();
         // Lines for adding log (End)
-
-//        try {
-//            // Create a URL for the desired page
-//            URL url = new URL("https://www.ics.uci.edu/~saeed/sample_doc.txt");
-//            Log.d("Saeed: ", "Connected to " + url);
-//            new UploadImageTask().execute(url);
-//        }
-//        catch (MalformedURLException e) {
-//            Log.d("Saeed: ", "Error1");
-//            e.printStackTrace();
-//        }
     }
 
     public void test_colors(SpannableString text, TextView tv) {
@@ -683,16 +672,6 @@ public class SigningActivity extends AppCompatActivity implements Callback,
                 } catch (FingerprintException e) {
                     e.printStackTrace();
                 }
-
-//                if (initCipher()) {
-//                    //If the cipher is initialized successfully, then create a CryptoObject instance//
-//                    cryptoObject = new FingerprintManager.CryptoObject(cipher);
-//
-//                    // Here, I’m referencing the FingerprintHandler class that we’ll create in the next section. This class will be responsible
-//                    // for starting the authentication process (via the startAuth method) and processing the authentication process events//
-//                    FingerprintHandler helper = new FingerprintHandler(this);
-//                    helper.startAuth(fingerprintManager, cryptoObject);
-//                }
             }
         }
     }
@@ -716,17 +695,6 @@ public class SigningActivity extends AppCompatActivity implements Callback,
         );
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-//        int b = decorView.getSystemUiVisibility();
-//        if ( (b | View.SYSTEM_UI_FLAG_LAYOUT_STABLE) == b) {
-//            Log.d("Saeed: ", "enabled1");
-//        }
-//        if ( (b | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION) == b) {
-//            Log.d("Saeed: ", "enabled2");
-//        }
-//        if ( (b | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN) == b) {
-//            Log.d("Saeed: ", "enabled3");
-//        }
 
     }
 
