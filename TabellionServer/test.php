@@ -1,12 +1,15 @@
 <?php
 
-$cpu_stat = '/proc/stat';
-$cpu_stat_content = file_get_contents($cpu_stat);
+echo "Going to run...\n";
 
-$stop_pos = strpos($cpu_stat_content, "intr");
+$first_run_result = shell_exec("cd sgx_codes/Linux/sgx/test_app_saeed_plus; sudo ./TestApp > /dev/null &");
 
-$real_cpu_stat_content = substr($cpu_stat_content, 0, $stop_pos);
+echo $first_run_result;
+echo "Here we go ...\n";
 
-echo $real_cpu_stat_content;
+$run_result = shell_exec("cd sgx_codes/Linux/sgx/test_app_saeed_plus/run_enclave; ./client 127.0.0.1 2");
+
+echo "We got it!\n";
+echo $run_result;
 
 ?>

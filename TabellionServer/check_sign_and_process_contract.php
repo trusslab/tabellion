@@ -97,9 +97,20 @@ $stop_pos = strpos($cpu_stat_content, "intr");
 
 $real_cpu_stat_content_finish = substr($cpu_stat_content, 0, $stop_pos);
 
+shell_exec("cd sgx_codes/Linux/sgx/test_app_saeed_plus; sudo ./TestApp > /dev/null &");
+
+echo "Going to do command: " . "cd sgx_codes/Linux/sgx/test_app_saeed_plus/run_enclave; ./client 127.0.0.1 $contract_id" . "\n";
+
+sleep(1);
+
+$run_result = exec("cd sgx_codes/Linux/sgx/test_app_saeed_plus/run_enclave; ./client 127.0.0.1 $contract_id");
+
+$time_enclave = microtime(true);
+
 $exec_time_signature = $time_signature_verified - $time_pre;
 $exec_time_screenshot = $time_screenshot_verified - $time_signature_verified;
 $exec_time_total = $time_last - $time_pre;
+$exec_time_enclave = $time_enclave - $time_last - 1; // -1 because of call of sleep(1)
 
 $time_log = './debug_log/verification_log.txt';
 $current = file_get_contents($time_log);
@@ -108,6 +119,7 @@ $current .= "Last screenshot #: " . $last_screenshot_num . "\n";
 $current .= "Signature verification time(first part): " . $exec_time_signature . "\n";
 $current .= "Screenshot verification time(second part): " . $exec_time_screenshot . "\n";
 $current .= "Verification time(total): " . $exec_time_total . "\n";
+$current .= "Enclave time: " . $exec_time_enclave . "\n";
 $current .= "CPU stat(Before): " . "\n" . $real_cpu_stat_content_start . "\n";
 $current .= "CPU stat(After): " . "\n" . $real_cpu_stat_content_finish . "\n";
 $current .= "-------------------------------------------------------------------------\n";

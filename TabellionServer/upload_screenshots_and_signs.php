@@ -11,9 +11,14 @@ if(isset($_FILES['file'])){
 	$offeror_token = shell_exec("python3 get_user_token.py $offeror_email");
 	$offeree_token = shell_exec("python3 get_user_token.py $offeree_email");
 	$status = shell_exec("python3 get_contract_status.py $contract_id");
-	$current_role = "offeree";
-	if($user_email == $offeror_email){
-		$current_role = "offeror";
+
+	$current_role = $_POST['current_role'];
+
+	if($current_role == ""){
+		$current_role = "offeree";
+		if($user_email == $offeror_email){
+			$current_role = "offeror";
+		}
 	}
 
 	echo "user is $current_role";

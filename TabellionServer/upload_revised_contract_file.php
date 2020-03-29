@@ -1,14 +1,11 @@
 <?php
+
+$contract_id = $_POST['contractid'];
+
 if(isset($_FILES['file'])){
-	echo "uploading revised contract file....";
+	echo "uploading contract file....";
 
-	$contract_id = shell_exec("python3 get_contracts_new_row_id.py");
-
-	$old_umask = umask(0);
-	mkdir("./submitted_files/$contract_id", 0777);
-	umask($old_umask);
-
-	$target_path = "submitted_files/$contract_id/"; //here folder name 
+	$target_path = "submitted_files/$contract_id/revision/"; //here folder name 
 	$target_path = $target_path . basename($_FILES['file']['name']);
 	$fms_token = $_POST['fms_token'];
 
@@ -29,14 +26,14 @@ if(isset($_FILES['file'])){
 	
 		set_time_limit(0);
 		do {
-    			if (file_exists("submitted_files/$contract_id/doc.md")) {
+    			if (file_exists("submitted_files/$contract_id/revision/doc.md")) {
         			echo "The file was found: " . date("d-m-Y h:i:s") . "<br>";
-					shell_exec("cd submitted_files;cp -p ocr_checker.py all.sh checker.py mdtohtml.py checker.sh clean.sh note.html review_note.html last-1.png style.txt $contract_id");
+					shell_exec("cd submitted_files;cp -p ocr_checker.py all.sh checker.py mdtohtml.py checker.sh clean.sh note.html review_note.html last-1.png style.txt $contract_id/revision");
         			break;
     			}
         } while(true);
         
-        echo "contract_id:" . $contract_id;
+        echo "all success!!!";
 
 	   } else {
 	  echo "Oh there! Error happened!!!";
@@ -44,3 +41,4 @@ if(isset($_FILES['file'])){
 }
 
 ?>
+

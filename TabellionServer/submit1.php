@@ -8,6 +8,7 @@ $status = (int)$_POST['status'];
 $confirm_status = (int)$_POST['confirmstatus'];
 $contract_id = $_POST['contractid'];
 $fms_token = $_POST['fms_token'];
+$is_contract_created_by_tabellion = $_POST['is_contract_created_by_tabellion'];
 
 echo "start rendering...";
 
@@ -16,7 +17,7 @@ $height_of_device = 1920;
 
 // If it is from hikey...
 if($offeror_email == "saeed@saeed.com"){
-    echo "Hikey detected...";
+    echo "Hikey detected...\n";
     $width_of_device = 1920;
     $height_of_device = 1080;
 }
@@ -196,7 +197,7 @@ $current .= "Render time(second part): " . $seoncd_part_time . "\n";
 $current .= "Render time(third part): " . $third_part_time . "\n";
 $current .= "Render time(forth part): " . $forth_part_time . "\n";
 $current .= "Render time(fifth part): " . $fifth_part_time . "\n";
-$current .= "Render time(mid part): " . $sixth_part_time . "\n";
+$current .= "Render time(sixth part): " . $sixth_part_time . "\n";
 $current .= "Render time(total): " . $exec_time . "\n";
 $current .= "CPU stat(Before): " . "\n" . $real_cpu_stat_content_start . "\n";
 $current .= "CPU stat(After): " . "\n" . $real_cpu_stat_content_finish . "\n";
@@ -204,6 +205,13 @@ $current .= "-------------------------------------------------------------------
 file_put_contents($time_log, $current);
 
 $msg_contracts_db = shell_exec("python3 add_contract.py \"$contract_name\" $offeror_email $offeree_email \"$description\" $status $count_of_images $confirm_status");
+
+// Set is_created_by_tabellion
+echo "is_contract_created_by_tabellion: $is_contract_created_by_tabellion\n";
+if($is_contract_created_by_tabellion == "true"){
+    //echo "python3 set_contract_is_created_by_tabellion.py $contract_id true";
+    shell_exec("python3 set_contract_is_created_by_tabellion.py $contract_id true");
+}
 
 echo $msg_contracts_db;
 shell_exec("./FCMmsg_rendered1.py $fms_token");
