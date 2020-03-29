@@ -1,0 +1,39 @@
+<body style="margin:0px;padding:0px">
+<meta name="viewport" content="width=1080, height=1920">
+
+<style>
+h1 { 
+    font-size: 5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 130px;
+}
+h2 { 
+    font-size: 4em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 180px;
+}
+h3 { 
+    font-size: 3em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 150px;
+}
+p { 
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 60px;
+}
+</style>
+
+
