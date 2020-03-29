@@ -13,7 +13,7 @@
 static processimage process;
 
 JNIEXPORT jstring JNICALL
-Java_edu_uci_ics_charm_signit_OperationsWithNDK_stringFromJNI( JNIEnv* env,
+Java_edu_uci_ics_charm_tabellion_OperationsWithNDK_stringFromJNI( JNIEnv* env,
                                                   jobject obj )
 {
     char* test = "hey there! This is a message from C!";
@@ -41,7 +41,7 @@ sustem(char *cmd) {
 }
 
 JNIEXPORT jboolean JNICALL
-Java_edu_uci_ics_charm_signit_OperationsWithNDK_sudo(JNIEnv *env, jobject obj, jstring xmd) {
+Java_edu_uci_ics_charm_tabellion_OperationsWithNDK_sudo(JNIEnv *env, jobject obj, jstring xmd) {
     // This is the function for executing command lines in su(sudo) mode
     char const * const cmd = (*env)->GetStringUTFChars(env, xmd, 0), *rmd;
     jboolean ret = JNI_TRUE;
@@ -60,7 +60,7 @@ Java_edu_uci_ics_charm_signit_OperationsWithNDK_sudo(JNIEnv *env, jobject obj, j
 }
 
 JNIEXPORT void JNICALL
-Java_edu_uci_ics_charm_signit_OperationsWithNDK_startshell(JNIEnv *env, jobject obj) {
+Java_edu_uci_ics_charm_tabellion_OperationsWithNDK_startshell(JNIEnv *env, jobject obj) {
     // This is the function for starting a new shell process in the background
     // We currently only allow one shell process in the background
     // This function is created because we do not want the mainthread to run any heavy task since it needs handle UI
@@ -69,7 +69,7 @@ Java_edu_uci_ics_charm_signit_OperationsWithNDK_startshell(JNIEnv *env, jobject 
 }
 
 JNIEXPORT void JNICALL
-Java_edu_uci_ics_charm_signit_OperationsWithNDK_closeshell(JNIEnv *env, jobject obj) {
+Java_edu_uci_ics_charm_tabellion_OperationsWithNDK_closeshell(JNIEnv *env, jobject obj) {
     // This is the function to close the shell in the background.
     if(process.pid) {
         rmprocess(&process);

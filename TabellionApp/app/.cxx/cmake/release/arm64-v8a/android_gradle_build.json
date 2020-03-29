@@ -1,41 +1,42 @@
-
 {
-	"buildFiles" : 
-	[
-		"C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/src/main/cpp/CMakeLists.txt"
-	],
-	"cFileExtensions" : [ "c" ],
-	"cleanCommands" : 
-	[
-		"C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cmake\\release\\arm64-v8a --target clean"
-	],
-	"libraries" : 
-	{
-		"xmd-actions-Release-arm64-v8a" : 
-		{
-			"abi" : "arm64-v8a",
-			"artifactName" : "xmd-actions",
-			"buildCommand" : "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.cxx\\cmake\\release\\arm64-v8a --target xmd-actions",
-			"buildType" : "release",
-			"files" : 
-			[
-				
-				{
-					"flags" : "  --target=aarch64-none-linux-android23 --gcc-toolchain=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dxmd_actions_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
-					"src" : "C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/src/main/cpp/xmd-actions.c",
-					"workingDirectory" : "C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/.cxx/cmake/release/arm64-v8a"
-				}
-			],
-			"output" : "C:/Users/lyx98/OneDrive/Documents/UCI/Research/tabellion_plus_research/SignIt_Plus_Android/SignIt/app/build/intermediates/cmake/release/obj/arm64-v8a/libxmd-actions.so",
-			"toolchain" : "440397233"
-		}
-	},
-	"toolchains" : 
-	{
-		"440397233" : 
-		{
-			"cCompilerExecutable" : "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
-			"cppCompilerExecutable" : "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
-		}
-	}
+  "stringTable": {
+    "0": "C:/Users/lyx98/OneDrive/Documents/UCI/Research/DocumentSign_Research/open_source/TabellionApp/app/.cxx/cmake/release/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android23 --gcc-toolchain=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dxmd_actions_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\release\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\release\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "xmd-actions-Release-arm64-v8a": {
+      "buildCommand": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\release\\arm64-v8a\" xmd-actions",
+      "buildType": "release",
+      "toolchain": "2002753949",
+      "abi": "arm64-v8a",
+      "artifactName": "xmd-actions",
+      "files": [
+        {
+          "src": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\src\\main\\cpp\\xmd-actions.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libxmd-actions.so"
+    }
+  },
+  "toolchains": {
+    "2002753949": {
+      "cCompilerExecutable": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
 }

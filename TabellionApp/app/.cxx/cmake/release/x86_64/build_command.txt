@@ -1,15 +1,20 @@
-Executable : C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
+Executable : C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe
 arguments : 
--HC:\Users\lyx98\OneDrive\Documents\UCI\Research\tabellion_plus_research\SignIt_Plus_Android\SignIt\app\src\main\cpp
--BC:\Users\lyx98\OneDrive\Documents\UCI\Research\tabellion_plus_research\SignIt_Plus_Android\SignIt\app\.cxx\cmake\release\x86_64
--DANDROID_ABI=x86_64
--DANDROID_PLATFORM=android-23
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\lyx98\OneDrive\Documents\UCI\Research\tabellion_plus_research\SignIt_Plus_Android\SignIt\app\build\intermediates\cmake\release\obj\x86_64
+-HC:\Users\lyx98\OneDrive\Documents\UCI\Research\DocumentSign_Research\open_source\TabellionApp\app\src\main\cpp
 -DCMAKE_BUILD_TYPE=Release
--DANDROID_NDK=C:\Users\lyx98\AppData\Local\Android\Sdk\ndk-bundle
--DCMAKE_CXX_FLAGS=
 -DCMAKE_TOOLCHAIN_FILE=C:\Users\lyx98\AppData\Local\Android\Sdk\ndk-bundle\build\cmake\android.toolchain.cmake
--DCMAKE_MAKE_PROGRAM=C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe
--GAndroid Gradle - Ninja
+-DANDROID_ABI=x86_64
+-DANDROID_NDK=C:\Users\lyx98\AppData\Local\Android\Sdk\ndk-bundle
+-DANDROID_PLATFORM=android-23
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DCMAKE_ANDROID_NDK=C:\Users\lyx98\AppData\Local\Android\Sdk\ndk-bundle
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\lyx98\OneDrive\Documents\UCI\Research\DocumentSign_Research\open_source\TabellionApp\app\build\intermediates\cmake\release\obj\x86_64
+-DCMAKE_MAKE_PROGRAM=C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=23
+-BC:\Users\lyx98\OneDrive\Documents\UCI\Research\DocumentSign_Research\open_source\TabellionApp\app\.cxx\cmake\release\x86_64
+-GNinja
 jvmArgs : 
 
+Build command args:
