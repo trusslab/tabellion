@@ -15,6 +15,24 @@
     - [Building OPTEE](tabellion_client_side_on_hikey.md#building-optee)
 
     - [Integrating with Tabellion](tabellion_client_side_on_hikey.md#integrating-with-tabellion)
+    
+- [Tabellion Android Application](tabellion_android_application.md#tabellion-android-application)
+
+    - [Configuring Tabellion App](tabellion_android_application.md#configuring-tabellion-app)
+
+    - [Building Tabellion App using Android Studio](tabellion_android_application.md#building-tabellion-app-using-android-studio)
+
+    - [Installing Tabellion App on Android Phone](tabellion_android_application.md#installing-tabellion-app-on-android-phone)
+
+    - [Tabellion App and Root Permission](tabellion_android_application.md#tabellion-app-and-root-permission)
+
+    - [Using Tabellion App on Android Phone](tabellion_android_application.md#using-tabellion-app-on-android-phone)
+
+- [Tabellion Server Side](Info/tabllion_server_side.md#tabellion_server_side)
+
+    - [Setting up Environment](Info/tabllion_server_side.md#setting-up-environment)
+
+    - [Configuring Tabellion Server](Info/tabllion_server_side.md#configuring-tabellion-server)
 
 # Tabellion client side on Hikey
 

@@ -27,3 +27,21 @@ Title of the paper: Tabellion: Secure Legal Contracts on Mobile Devices.
     - [Building OPTEE](Info/tabellion_client_side_on_hikey.md#building-optee)
 
     - [Integrating with Tabellion](Info/tabellion_client_side_on_hikey.md#integrating-with-tabellion)
+
+- [Tabellion Android Application](Info/tabellion_android_application.md#tabellion-android-application)
+
+    - [Configuring Tabellion App](Info/tabellion_android_application.md#configuring-tabellion-app)
+
+    - [Building Tabellion App using Android Studio](Info/tabellion_android_application.md#building-tabellion-app-using-android-studio)
+
+    - [Installing Tabellion App on Android Phone](Info/tabellion_android_application.md#installing-tabellion-app-on-android-phone)
+
+    - [Tabellion App and Root Permission](Info/tabellion_android_application.md#tabellion-app-and-root-permission)
+
+    - [Using Tabellion App on Android Phone](Info/tabellion_android_application.md#using-tabellion-app-on-android-phone)
+
+- [Tabellion Server Side](Info/tabllion_server_side.md#tabellion_server_side)
+
+    - [Setting up Environment](Info/tabllion_server_side.md#setting-up-environment)
+
+    - [Configuring Tabellion Server](Info/tabllion_server_side.md#configuring-tabellion-server)
