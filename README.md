@@ -1,3 +1,5 @@
+# Tabellion Overview
+
 This is the source code for our project Tabellion that we published in ACM MobiSys'20. You can find the PDF of the paper in here: Link.
 
 Title of the paper: Tabellion: Secure Legal Contracts on Mobile Devices.
@@ -11,6 +13,10 @@ Title of the paper: Tabellion: Secure Legal Contracts on Mobile Devices.
 * [Sung Eun (Summer) Kim, Law Faculty, UC Irvine] (https://www.law.uci.edu/faculty/full-time/kim)
 
 # Table of Contents
+
+- [Tabellion Overview](README.md#tabellion-overview)
+
+- [People](README.md#people)
 
 - [Tabellion Components Overview](Info/tabellion_components_overview.md#tabellion-components-overview)
 
@@ -40,7 +46,7 @@ Title of the paper: Tabellion: Secure Legal Contracts on Mobile Devices.
 
     - [Using Tabellion App on Android Phone](Info/tabellion_android_application.md#using-tabellion-app-on-android-phone)
 
-- [Tabellion Server Side](Info/tabellion_server_side.md#tabellion_server_side)
+- [Tabellion Server Side](Info/tabellion_server_side.md#tabellion-server-side)
 
     - [Setting up Environment](Info/tabellion_server_side.md#setting-up-environment)
 

@@ -1,5 +1,9 @@
 # Table of Contents
 
+- [Tabellion Overview](../README.md#tabellion-overview)
+
+- [People](../README.md#people)
+
 - [Tabellion Components Overview](tabellion_components_overview.md#tabellion-components-overview)
 
 - [Tabellion client side on HiKey](tabellion_client_side_on_hikey.md#tabellion-client-side-on-hikey)
@@ -28,7 +32,7 @@
 
     - [Using Tabellion App on Android Phone](tabellion_android_application.md#using-tabellion-app-on-android-phone)
 
-- [Tabellion Server Side](tabellion_server_side.md#tabellion_server_side)
+- [Tabellion Server Side](tabellion_server_side.md#tabellion-server-side)
 
     - [Setting up Environment](tabellion_server_side.md#setting-up-environment)
 
