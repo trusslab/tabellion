@@ -12,6 +12,5 @@ Title of the paper: Tabellion: Secure Legal Contracts on Mobile Devices.
 
 # Table of Contents
 
-* [I'm an inline-style link](https://www.google.com)
-* [1. Tabellion Components Overview](Info/tabellion_components_overview.md)
-* [2. Tabellion client side on HiKey](https://github.com/trusslab/tabellion/tree/in_work/Info/tabellion_client_side_on_hikey.md)
+[1. Tabellion Components Overview](Info/tabellion_components_overview.md#1.-tabellion-components-overview)
+[2. Tabellion client side on HiKey](https://github.com/trusslab/tabellion/tree/in_work/Info/tabellion_client_side_on_hikey.md)
