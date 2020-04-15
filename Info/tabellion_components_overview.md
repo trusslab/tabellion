@@ -6,7 +6,7 @@
 
     - [Building Xen on ARM](tabellion_client_side_on_hikey.md#building-xen-on-arm)
 
-    - [Building AOSP with Xen enabled](tabellion_client_side_on_hikey.md#building-aosp-with-xen-enabled:)
+    - [Building AOSP with Xen enabled](tabellion_client_side_on_hikey.md#building-aosp-with-xen-enabled)
 
     - [Preparing your boot image files](tabellion_client_side_on_hikey.md#preparing-your-boot-image-files)
 
