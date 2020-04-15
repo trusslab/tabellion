@@ -28,11 +28,11 @@
 
     - [Using Tabellion App on Android Phone](tabellion_android_application.md#using-tabellion-app-on-android-phone)
 
-- [Tabellion Server Side](Info/tabllion_server_side.md#tabellion_server_side)
+- [Tabellion Server Side](tabellion_server_side.md#tabellion_server_side)
 
-    - [Setting up Environment](Info/tabllion_server_side.md#setting-up-environment)
+    - [Setting up Environment](tabellion_server_side.md#setting-up-environment)
 
-    - [Configuring Tabellion Server](Info/tabllion_server_side.md#configuring-tabellion-server)
+    - [Configuring Tabellion Server](tabellion_server_side.md#configuring-tabellion-server)
 
 # Tabellion client side on Hikey
 

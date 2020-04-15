@@ -40,8 +40,8 @@ Title of the paper: Tabellion: Secure Legal Contracts on Mobile Devices.
 
     - [Using Tabellion App on Android Phone](Info/tabellion_android_application.md#using-tabellion-app-on-android-phone)
 
-- [Tabellion Server Side](Info/tabllion_server_side.md#tabellion_server_side)
+- [Tabellion Server Side](Info/tabellion_server_side.md#tabellion_server_side)
 
-    - [Setting up Environment](Info/tabllion_server_side.md#setting-up-environment)
+    - [Setting up Environment](Info/tabellion_server_side.md#setting-up-environment)
 
-    - [Configuring Tabellion Server](Info/tabllion_server_side.md#configuring-tabellion-server)
+    - [Configuring Tabellion Server](Info/tabellion_server_side.md#configuring-tabellion-server)
