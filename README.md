@@ -12,6 +12,6 @@ Title of the paper: Tabellion: Secure Legal Contracts on Mobile Devices.
 
 # Table of Contents
 
-[1. Tabellion Components Overview] (./Info/tabellion_components_overview.md)
+[1. Tabellion Components Overview] (../Info/tabellion_components_overview.md)
 
-[2. Tabellion client side on HiKey] (./Info/tabellion_client_side_on_hikey.md)
+[2. Tabellion client side on HiKey] (../Info/tabellion_client_side_on_hikey.md)
