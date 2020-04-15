@@ -1,10 +1,10 @@
 # Table of Contents
 
-## [Tabellion Components Overview](Info/tabellion_components_overview.md#tabellion-components-overview)
+- [Tabellion Components Overview](Info/tabellion_components_overview.md#tabellion-components-overview)
 
-## [Tabellion client side on HiKey](https://github.com/trusslab/tabellion/tree/in_work/Info/tabellion_client_side_on_hikey.md)
+- [Tabellion client side on HiKey](Info/tabellion_client_side_on_hikey.md#tabellion-client-side-on-hikey)
 
-------
+    - [Building Xen on ARM](Info/tabellion_client_side_on_hikey.md#building-xen-on-arm)
 
 # Tabellion Components Overview
 
