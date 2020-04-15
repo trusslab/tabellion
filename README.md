@@ -17,3 +17,13 @@ Title of the paper: Tabellion: Secure Legal Contracts on Mobile Devices.
 - [Tabellion client side on HiKey](Info/tabellion_client_side_on_hikey.md#tabellion-client-side-on-hikey)
 
     - [Building Xen on ARM](Info/tabellion_client_side_on_hikey.md#building-xen-on-arm)
+
+    - [Building AOSP with Xen enabled](Info/tabellion_client_side_on_hikey.md#building-aosp-with-xen-enabled:)
+
+    - [Preparing your boot image files](Info/tabellion_client_side_on_hikey.md#preparing-your-boot-image-files)
+
+    - [Flashing your image](Info/tabellion_client_side_on_hikey.md#flashing-your-image)
+
+    - [Building OPTEE](Info/tabellion_client_side_on_hikey.md#building-optee)
+
+    - [Integrating with Tabellion](Info/tabellion_client_side_on_hikey.md#integrating-with-tabellion)

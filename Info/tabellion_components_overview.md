@@ -6,6 +6,16 @@
 
     - [Building Xen on ARM](tabellion_client_side_on_hikey.md#building-xen-on-arm)
 
+    - [Building AOSP with Xen enabled](tabellion_client_side_on_hikey.md#building-aosp-with-xen-enabled:)
+
+    - [Preparing your boot image files](tabellion_client_side_on_hikey.md#preparing-your-boot-image-files)
+
+    - [Flashing your image](tabellion_client_side_on_hikey.md#flashing-your-image)
+
+    - [Building OPTEE](tabellion_client_side_on_hikey.md#building-optee)
+
+    - [Integrating with Tabellion](tabellion_client_side_on_hikey.md#integrating-with-tabellion)
+
 # Tabellion Components Overview
 
 In Tabellion, we have developed the client side on HiKey development board and Nexus 5X smartphone and the server side in an Azure VM.
