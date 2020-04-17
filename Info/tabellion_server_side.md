@@ -52,6 +52,24 @@ Then please follow the instruction in this webpage to set your Apache 2 default 
 
 We are using MySQL as our Tabellion Server's databse. Please follow the instruction in this webpage to install MySQL and set up your MySQL account: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04
 
+Intel Software Guard Extension(SGX) is needed for running our enclave, please make sure your server is compatiable with at least SGX 1. Then follow this webpage to install the SGX driver: https://github.com/intel/linux-sgx (Remember to source the SDK once you finish installing it)
+
+In addition, for ruuning our enclave, you will need sudo permission. Please give sudo permission to the following PHP file: check_sign_and_process_contract.php. This webpage contains instruction on how to give PHP file sudo permission: http://www.bonebrews.com/granting-sudo-to-php/
+
+For simplicity, you can also just follow the following steps to give all www-data sudo permission. (This could be risky for your server)
+
+Open the sudoers file:
+
+```
+sudo visudo
+```
+
+Add the folloing line and save the file:
+
+```
+www-data ALL=NOPASSWD: ALL
+```
+
 ## Configuring Tabellion Server
 
 First we need to set up permissions on Tabellion Server.
