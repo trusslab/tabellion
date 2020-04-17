@@ -54,6 +54,8 @@ We are using MySQL as our Tabellion Server's databse. Please follow the instruct
 
 Intel Software Guard Extension(SGX) is needed for running our enclave, please make sure your server is compatiable with at least SGX 1. Then follow this webpage to install the SGX driver: https://github.com/intel/linux-sgx (Remember to source the SDK once you finish installing it)
 
+Intel SGX SSL is also needed for our enclave to generate signature of a contract, please follow this webpage to install it: https://github.com/intel/intel-sgx-ssl.
+
 In addition, for ruuning our enclave, you will need sudo permission. Please give sudo permission to the following PHP file: check_sign_and_process_contract.php. This webpage contains instruction on how to give PHP file sudo permission: http://www.bonebrews.com/granting-sudo-to-php/
 
 For simplicity, you can also just follow the following steps to give all www-data sudo permission. (This could be risky for your server)
@@ -68,6 +70,37 @@ Add the folloing line and save the file:
 
 ```
 www-data ALL=NOPASSWD: ALL
+```
+
+Now you will need to compile everything related to SGX in Tabellion.
+
+Go to [Tabellion Server Root Folder]/sgx_codes/Linux, and run the following codes:
+
+```
+sudo make clean
+./build_openssl.sh
+sudo make
+```
+
+Go to [Tabellion Server Root Folder]/sgx_codes/Linux/sgx, and run the following codes:
+
+```
+sudo make clean
+sudo make
+```
+
+Go to [Tabellion Server Root Folder]/sgx_codes/Linux/sgx/test_app_saeed_plus, and run the following codes:
+
+```
+sudo make clean
+sudo make
+```
+
+Go to [Tabellion Server Root Folder]/sgx_codes/Linux/sgx/test_app_saeed_plus/run_enclave, and run the following codes (Notice that the first line might give some error message, which can be ignored safely):
+
+```
+sudo make clean
+sudo make
 ```
 
 ## Configuring Tabellion Server
