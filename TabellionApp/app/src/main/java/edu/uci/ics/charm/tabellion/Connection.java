@@ -51,7 +51,8 @@ public class Connection {
 
     //private static final String mainUriTag = "http://128.195.54.65/OneAppTestVersion/";
     //private static final String mainUriTag = "http://13.90.224.167/OneAppTestVersion/";
-    private static final String mainUriTag = "http://13.90.224.167/OpenSourceTestVersion/tabellion/TabellionServer/";
+    //private static final String mainUriTag = "http://13.90.224.167/OpenSourceTestVersion/tabellion/TabellionServer/";
+    private static final String mainUriTag = "http://168.62.39.118/tabellion/TabellionServer/";
     private static final String TAG = "Connection ";
 
     private Context sContext;

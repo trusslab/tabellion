@@ -165,7 +165,6 @@
       "project": {
         "compilerSettingsCacheFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\.cxx",
         "cxxFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\.cxx",
-        "ideBuildTargetAbi": "x86",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
@@ -188,7 +187,10 @@
     "objFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\build\\intermediates\\cmake\\debug\\obj",
     "variantName": "debug",
     "validAbiList": [
-      "X86"
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
     ]
   }
 }
