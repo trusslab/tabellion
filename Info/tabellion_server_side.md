@@ -103,6 +103,14 @@ sudo make clean
 sudo make
 ```
 
+Here are some of Python3 packages/libraries that you will need to install:
+
+```
+PyPDF2, textract, nltk, tika, fitz 
+```
+
+Note that we are providing a Python3 fitz library here in "[TabellionServer Root Folder]/python_libs" folder since the version being automatically installed sometimes will give an error indicating not able to import frontend.
+
 ## Configuring Tabellion Server
 
 First we need to set up permissions on Tabellion Server.
@@ -120,6 +128,12 @@ sudo chmod -R 777 [path to Tabellion Server]/submitted_files
 sudo chmod -R 777 [path to Tabellion Server]/users
 ```
 
+Now let's config MySQL. Run the following codes in MySQL console:
+
+```
+CREATE DATABASE [your_database_name]
+```
+
 Then we need to set up database access in all Python files(*.py).
 
 In most of Python files under Tabellion Server root folder (except the ones started with FCM***), you will find the following lines of codes:
@@ -135,10 +149,18 @@ mydb = mysql.connector.connect(
 
 Please replace these lines with your own MySQL's host, username, password and database name.
 
+Verify and initialize tables by using the following lines in Tabellion Server's root folder:
+
+```
+python3 init_database.py
+python3 remove_all_users.py
+python3 remove_all_contract_and_init.py
+```
+
 Finally we need to set up Google FCM Service on Tabellion Server. Please follow the official FCM instruction to set up certificate on Tabellion Server. Then open all Python files started with FCM***, which you will find the folling line:
 
 ```
 cred = credentials.Certificate('truesignresearch-firebase-adminsdk-gl0ko-0e85616485.json')
 ```
 
-Replace it with your own certificate's name.
+Replace it with your own certificate's file name.
