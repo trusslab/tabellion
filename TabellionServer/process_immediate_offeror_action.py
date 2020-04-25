@@ -22,7 +22,7 @@ myresult = mycursor.fetchall()
 offerorToken = os.popen("python3 get_user_token.py " + sys.argv[1]).read()
 
 for contract_info in myresult:
-    if contract_info[1] == 2 or contract_info[1] == 7:
+    if contract_info[1] == 2 or contract_info[1] == 11:
         # Tempory way for finishing contract, should try to wait for sgx sinature first
         mycursor.execute("UPDATE contracts SET status = '7' WHERE contractid = '" + str(contract_info[0]) + "'")
         mydb.commit()

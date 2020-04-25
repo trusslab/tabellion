@@ -52,9 +52,11 @@ Then please follow the instruction in this webpage to set your Apache 2 default 
 
 We are using MySQL as our Tabellion Server's databse. Please follow the instruction in this webpage to install MySQL and set up your MySQL account: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04
 
-Intel Software Guard Extension(SGX) is needed for running our enclave, please make sure your server is compatiable with at least SGX 1. Then follow this webpage to install the SGX driver: https://github.com/intel/linux-sgx (Remember to source the SDK once you finish installing it)
+Intel Software Guard Extension(SGX) is needed for running our enclave, please make sure your server is compatiable with at least SGX 1. Then follow this webpage to install the SGX Driver: https://github.com/intel/linux-sgx-driver, and follow this webpage to install the SGX SDK: https://github.com/intel/linux-sgx (Remember to source the SDK once you finish installing it)
 
 Intel SGX SSL is also needed for our enclave to generate signature of a contract, please follow this webpage to install it: https://github.com/intel/intel-sgx-ssl.
+
+Note that you can find all SGX related libraries in "[TabellionServer Root Folder]/linux_libraries", where you can feel free to make use of.
 
 In addition, for ruuning our enclave, you will need sudo permission. Please give sudo permission to the following PHP file: check_sign_and_process_contract.php. This webpage contains instruction on how to give PHP file sudo permission: http://www.bonebrews.com/granting-sudo-to-php/
 
@@ -78,7 +80,6 @@ Go to [Tabellion Server Root Folder]/sgx_codes/Linux, and run the following code
 
 ```
 sudo make clean
-./build_openssl.sh
 sudo make
 ```
 
@@ -103,13 +104,25 @@ sudo make clean
 sudo make
 ```
 
-Here are some of Python3 packages/libraries that you will need to install:
+Here are some of Python3 packages/libraries that you will need to install (You might need to install additional libraries to make Tabellion Server run successfully):
 
 ```
-PyPDF2, textract, nltk, tika, fitz 
+PyPDF2, textract, nltk, tika, fitz, scikit-image, opencv-python, mistune, mysql-connector-python
 ```
 
-Note that we are providing a Python3 fitz library here in "[TabellionServer Root Folder]/python_libs" folder since the version being automatically installed sometimes will give an error indicating not able to import frontend.
+Note that we are providing a Python3 fitz library here in "[TabellionServer Root Folder]/python_libs" folder since the version being automatically installed sometimes will give an error indicating not able to import frontend (but we recommand you first try installing all libraries through Python3 Pip).
+
+Here are some of Python2 packages/libraries that you will need to install (You might need to install additional libraries to make Tabellion Server run successfully):
+
+```
+pillow
+```
+
+Here are some of Linux packages/libraries that you will need to install (You might need to install additional libraries to make Tabellion Server run successfully):
+
+```
+xvfb, wkhtmltopdf, poppler-utils, libmysqlcppconn-dev
+```
 
 ## Configuring Tabellion Server
 
