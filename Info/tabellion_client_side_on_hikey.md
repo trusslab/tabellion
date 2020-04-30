@@ -219,5 +219,19 @@ git checkout staging
 
 Next, copy the two folders into your Android repo 'external' folder in the root directory.
 Run 'mm'  in each of the folders and do './push.sh' to push the generated binary into the HiKey board.
+To run these primitives separately:
 
+'cd /data/local/' then: do 'camera\_capture' to capture a secure photo.
+This will make all the necessary calls and capture a 'photo' with its signature ('sgn') and store it in the current directory.
+To capture a secure screenshot, do 'optee\_example\_hello\_world 4' to freeze the screen.
+Then 'optee\_example\_hello\_world 1' to sign the framebuffer.
+Finally, 'optee\_example\_hello\_world 5' to unfreeze the screen.
+
+For secure timer, first clone the following into your system:
+```
+git clone https://github.com/jagd/ntp
+```
+
+Build the server side into your system and run './server' to have your time server ready.
+To synchronize the secure timer, run the 'optee\_example\_hello\_world 2'.
 
