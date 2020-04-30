@@ -174,7 +174,7 @@ To flash your fip.bin:
 sudo fastboot flash fastboot fip.bin
 ```
 
-## Integrating with Tabellion
+## Integrating the kernels with Tabellion
 
 Now that you have set up your directories, git checkout the Tabellion repos, re-build the kernels, and re-flash the images.
 
@@ -182,20 +182,42 @@ For AOSP kernel:
 
 ```
 git add remote origin https://github.com/trusslab/tabellion_hikey_android
-git checkout Tabellion_v1
+git checkout staging
 ```
 
 For Xen:
 
 ```
 git add remote origin https://github.com/trusslab/tabellion_hikey_xen
-git checkout Tabellion_v1
+git checkout staging
 ```
+
+To build Xen, run the 'compile\_xen.sh' that is made available in the root directory.
 
 For OPTEE:
 
 ```
 git add remote origin https://github.com/trusslab/tabellion_hikey_optee
-git checkout Tabellion_v1
+git checkout staging
 ```
+
+## Android external code
+
+For the Android application to call the secure primitives, we designed interfaces that make the secure calls.
+There are two of them that is needed to be built with Android.
+One (camera\_external) is for the camera that connects the app with the v4l2 driver.
+V4l2 driver will then make secure calls in the appropriate ioctls.
+Next (ta\_client\_external) is for secure timestamp and secure screenshots.
+This will make calls to Xen and the pseudo trusted application in OPTEE core.
+
+First, clone the following repo:
+
+```
+git add remote origin https://github.com/trusslab/tabellion_android_external
+git checkout staging
+```
+
+Next, copy the two folders into your Android repo 'external' folder in the root directory.
+Run 'mm'  in each of the folders and do './push.sh' to push the generated binary into the HiKey board.
+
 
