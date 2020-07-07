@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pending_sign_contract_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    android:longClickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@color/colorPendingSignContractItemBackground">
+
+    <ImageView
+        android:id="@+id/pending_sign_contract_item_preview_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_contract_preview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pending_sign_contract_item_contract_name_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pending_sign_contract_item_contract_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:text="ContractTitle"
+        android:textSize="@dimen/pending_to_sign_contract_name"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pending_sign_contract_item_current_role_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pending_sign_contract_item_preview_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pending_sign_contract_item_current_role_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="2dp"
+        android:text="Your Role: Offeror"
+        app:layout_constraintBottom_toTopOf="@+id/pending_sign_contract_item_contract_description_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pending_sign_contract_item_contract_name_text_view" />
+
+    <TextView
+        android:id="@+id/pending_sign_contract_item_contract_description_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp"
+        android:text="This position is reserved for the description of this contract. Normally this description should not be longer than 50 words."
+        app:layout_constraintBottom_toTopOf="@+id/pending_sign_contract_item_offeror_email_text_view"
+        app:layout_constraintStart_toEndOf="@+id/pending_sign_contract_item_preview_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/pending_sign_contract_item_current_role_text_view" />
+
+    <TextView
+        android:id="@+id/pending_sign_contract_item_offeror_email_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:text="Offeror: lyx981mike@gmail.com"
+        app:layout_constraintBottom_toTopOf="@+id/pending_sign_contract_item_offeree_email_text_view"
+        app:layout_constraintStart_toEndOf="@+id/pending_sign_contract_item_preview_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/pending_sign_contract_item_contract_description_text_view" />
+
+    <TextView
+        android:id="@+id/pending_sign_contract_item_offeree_email_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Offeror: yuxil11@uci.edu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pending_sign_contract_item_preview_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/pending_sign_contract_item_offeror_email_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

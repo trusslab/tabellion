@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NewDocument"
+    tools:showIn="@layout/activity_new_document">
+
+    <ImageView
+        android:id="@+id/new_document_preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/default_contract_preview"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/new_document_contract_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/new_document_contract_name"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/contract_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/new_document_upload_contract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_document_preview_image" />
+
+    <Button
+        android:id="@+id/new_document_upload_contract"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/upload_mark_down_file"
+        app:layout_constraintBottom_toTopOf="@+id/new_document_textView_or_between_contracts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_document_contract_name" />
+
+    <TextView
+        android:id="@+id/new_document_textView_or_between_contracts"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:textAlignment="center"
+        android:hint="@string/select_one_of_the_button"
+        app:layout_constraintBottom_toTopOf="@+id/new_document_create_contract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_document_upload_contract" />
+
+    <Button
+        android:id="@+id/new_document_create_contract"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/create_mark_down_contract"
+        app:layout_constraintBottom_toTopOf="@+id/new_document_contract_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_document_textView_or_between_contracts" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/new_document_contract_description"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="26dp"
+        android:ems="10"
+        android:hint="@string/contract_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_document_create_contract" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/new_document_to_who"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="26dp"
+        android:ems="10"
+        android:hint="@string/who_to_send"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_document_contract_description" />
+
+    <ProgressBar
+        android:id="@+id/new_document_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/new_document_to_who"
+        app:layout_constraintStart_toStartOf="@+id/new_document_to_who"
+        app:layout_constraintTop_toTopOf="@+id/new_document_to_who" />
+
+    <TextView
+        android:id="@+id/new_document_textView"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/waiting_for_rendering"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/new_document_to_who"
+        app:layout_constraintStart_toStartOf="@+id/new_document_to_who"
+        app:layout_constraintTop_toBottomOf="@+id/new_document_progressBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

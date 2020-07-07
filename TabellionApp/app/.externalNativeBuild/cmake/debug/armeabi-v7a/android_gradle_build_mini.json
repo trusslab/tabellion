@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "xmd-actions-Debug-armeabi-v7a": {
+      "artifactName": "xmd-actions",
+      "buildCommand": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target xmd-actions",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\tabellion_plus_research\\SignIt_Plus_Android\\SignIt\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libxmd-actions.so"
+    }
+  }
+}

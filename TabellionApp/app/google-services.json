@@ -1,0 +1,104 @@
+{
+  "project_info": {
+    "project_number": "1032614413032",
+    "firebase_url": "https://truesignresearch.firebaseio.com",
+    "project_id": "truesignresearch",
+    "storage_bucket": "truesignresearch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032614413032:android:9b7b8a65a762cf6c",
+        "android_client_info": {
+          "package_name": "com.example.saeed.myapplication3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032614413032-om7a1d3p5u9ci3tmtqrhh790e0marl35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN3_EYJNr1BpwI7WHw1TzeeHqd21fIZWA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032614413032:android:41f3cafa32bfe04f",
+        "android_client_info": {
+          "package_name": "com.example.saeed.myapplication4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032614413032-om7a1d3p5u9ci3tmtqrhh790e0marl35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN3_EYJNr1BpwI7WHw1TzeeHqd21fIZWA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032614413032:android:faf3db89adb2d6f3",
+        "android_client_info": {
+          "package_name": "edu.uci.ics.charm.signit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032614413032-om7a1d3p5u9ci3tmtqrhh790e0marl35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN3_EYJNr1BpwI7WHw1TzeeHqd21fIZWA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

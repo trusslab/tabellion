@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPendingSignContractBackground">#e5e5e5</color>
+    <color name="colorPendingSignContractLastPageBackground">#61c8ff</color>
+    <color name="colorPendingSignContractItemBackground">#ffffff</color>
+    <color name="colorFinish">#38ff4b</color>
+    <color name="transparent">#00000000</color>
+</resources>

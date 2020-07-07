@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\release\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\release\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "xmd-actions-Release-x86": {
+      "artifactName": "xmd-actions",
+      "buildCommand": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\release\\x86\" xmd-actions",
+      "abi": "x86",
+      "output": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\build\\intermediates\\cmake\\release\\obj\\x86\\libxmd-actions.so"
+    }
+  }
+}
