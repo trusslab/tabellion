@@ -2,25 +2,25 @@
   {
     "level": "INFO",
     "message": "Start JSON generation. Platform version: 23 min SDK version: armeabi-v7a",
-    "file": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "file": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
     "tag": "debug|armeabi-v7a"
   },
   {
     "level": "INFO",
     "message": "No CMake version was specified in build.gradle. Using default version 3.10.2.",
-    "file": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "file": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
     "tag": "debug|armeabi-v7a"
   },
   {
     "level": "INFO",
-    "message": "JSON \u0027C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\android_gradle_build.json\u0027 was up-to-date",
-    "file": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "message": "JSON \u0027C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\android_gradle_build.json\u0027 was up-to-date",
+    "file": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
     "tag": "debug|armeabi-v7a"
   },
   {
     "level": "INFO",
     "message": "JSON generation completed without problems",
-    "file": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "file": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
     "tag": "debug|armeabi-v7a"
   }
 ]

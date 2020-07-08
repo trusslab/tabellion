@@ -1,16 +1,16 @@
 <?php
 
 if(isset($_FILES['file'])){
-	echo "uploading photo taken by user....";
+	// echo "uploading photo taken by user....";
 	$current_time_interval = $_POST['timeinterval'];
 	$user_email = $_POST['useremail'];
 	$photo_folder_name = "photos_taken_by_user";
 	$signature_folder_name = "signatures_of_photos_taken_by_user";
 	$photo_name = $_FILES['file']['name'];
 
-	echo "The user email is: $user_email";
+	// echo "The user email is: $user_email";
 
-	echo "Going to make dir: " . "./users/$user_email/$photo_folder_name/" . "\n";
+	// echo "Going to make dir: " . "./users/$user_email/$photo_folder_name/" . "\n";
 
 	$old_umask = umask(0);
 	mkdir("./users/$user_email/$photo_folder_name/", 0777, true);
@@ -23,7 +23,7 @@ if(isset($_FILES['file'])){
 	$target_path_signature = "./users/$user_email/$signature_folder_name/"; //here folder name 
 	$target_path_signature = $target_path_signature . basename($_FILES['signature']['name']);
 
-	echo $target_path_photo;
+	// echo $target_path_photo;
 
 	if(isset($_FILES['error'])){
 		error_log("Upload File >>" . $target_path_photo . $_FILES['error'] . " \r\n", 3,
@@ -43,9 +43,9 @@ if(isset($_FILES['file'])){
 	file_put_contents($path_of_photos_time_intervals, $photos_time_intervals_content);
 
 	if(move_uploaded_file($_FILES['file']['tmp_name'], $target_path_photo)) {
-		echo "The file has been uploaded";
+		// echo "The file has been uploaded";
 		//shell_exec("./push_rendered2.sh");
-		echo $_FILES['file']['name'];
+		// echo $_FILES['file']['name'];
 		
 		shell_exec("cp recognize.py segement.py users/$user_email/$photo_folder_name/");
 		$fingers = shell_exec("cd users/$user_email/$photo_folder_name/; python recognize.py $photo_name 2>&1");

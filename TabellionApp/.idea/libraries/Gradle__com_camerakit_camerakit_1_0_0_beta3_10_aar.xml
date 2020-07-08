@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.camerakit:camerakit:1.0.0-beta3.10@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/99138bf64d8d7f00e79448c495f69b97/jetified-camerakit-1.0.0-beta3.10/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c3c04b657cc09485b9272ed71968dfc4/jetified-camerakit-1.0.0-beta3.10/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/99138bf64d8d7f00e79448c495f69b97/jetified-camerakit-1.0.0-beta3.10/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/99138bf64d8d7f00e79448c495f69b97/jetified-camerakit-1.0.0-beta3.10/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c3c04b657cc09485b9272ed71968dfc4/jetified-camerakit-1.0.0-beta3.10/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c3c04b657cc09485b9272ed71968dfc4/jetified-camerakit-1.0.0-beta3.10/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

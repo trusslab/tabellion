@@ -1,2 +1,2 @@
-ninja: Entering directory `C:\Users\lyx98\OneDrive\Documents\UCI\Research\DocumentSign_Research\open_source\TabellionApp\app\.cxx\cmake\debug\armeabi-v7a'
+ninja: Entering directory `C:\Users\lyx98\OneDrive\Documents\UCI\Projects\Tabellion\Tabellion-com\TabellionApp\app\.cxx\cmake\debug\armeabi-v7a'
 ninja: no work to do.

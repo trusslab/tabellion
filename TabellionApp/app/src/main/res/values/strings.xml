@@ -7,7 +7,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_pending_to_sign">Pending To Sign</string>
     <string name="nav_wait_for_finishing">In Progress</string>
-    <string name="nav_history_contracts">History Contracts</string>
+    <string name="nav_history_contracts">Contracts Archive</string>
     <string name="nav_discover_more">Discover More</string>
     <string name="nav_share">Share</string>
     <string name="nav_start_signing">Start Signing</string>
@@ -81,6 +81,7 @@
     <string name="from_offeror_email">From: %s</string>
     <string name="download_contract">Download Contract</string>
     <string name="start_signing">Start Signing</string>
+    <string name="review_contract">Review Contract</string>
     <string name="instructions">Place your fingertip on the sensor to sign.</string>
     <string name="default_notification_channel_name" translatable="true">News</string>
     <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
@@ -111,13 +112,14 @@
     <string name="confirm">Confirm</string>
     <string name="cancel">Cancel</string>
     <string name="confirm_getting_contract_from_offeror">
-        By clicking "Confirm", you will be able to see the contract name and description.
-        Your photo will be shown to the person who send you this contract for final confirmation.
+        By clicking on the Confirm button, you will be able to see the contract name and description and
+        the person identified below will be able to see your photo for final confirmation. Would you like to proceed?
     </string>
     <string name="confirm_sending_contract_to_offeree">
-        By clicking "Confirm", the person who receives your contract will be able to sign your contract.
+        By clicking on the Confirm button, the person identified below will be able to sign your contract. Would you like to proceed?
     </string>
     <string name="notification">Notification</string>
+    <string name="user_photo">User Photo</string>
     <string name="check_connection">Please check your internet connection</string>
     <string name="loading">Loading</string>
     <string name="wait_for_offeror_first_before_confirm">Please wait for the person who start the contract to finish signing.</string>
@@ -138,8 +140,8 @@
     <string name="re_registering_info">Re-registering account(s) (%d/%d)</string>
     <string name="re_registering_label">Re-registering</string>
     <string name="waiting_for_rendering">Waiting for server to finish rendering
-        \nYou can excuse the wait now, your contract will appear in your main screen once we get the response from the server</string>
-    <string name="excuse_the_wait">Excuse the Wait</string>
+        \nYou can skip the wait now, your contract will appear in your main screen once we get the response from the server</string>
+    <string name="excuse_the_wait">Skip the Wait</string>
     <string name="revoke">Revoke</string>
     <string name="revoke_request_sent">Revoke Request Sent</string>
     <string name="upload_fail">Upload failed!</string>
@@ -159,7 +161,21 @@
     <string name="denied_permission_for_taking_screenshot">Please give us permission to capture your screen…</string>
     <string name="sign_with_your_fingerprint_note">Put your finger on the fingerprint sensor to sign. Press back to abort.</string>
     <string name="offeror_upload_photo_msg">Securing your photo…</string>
+    <string name="title_of_prompt_for_showing_fingers">Gesture Verification</string>
+    <string name="something_recoverable_went_wrong">Don\'t panic, let\'s give another try! :)</string>
+    <string name="prompt_for_showing_fingers">Please show %d of fingers when taking photo</string>
+    <string name="verifying_gesture">Verifying your gesture…</string>
+    <string name="gesture_verify_failure">Gesture verification failed</string>
     <string name="error_happened_when_saving_file">There is an error when trying to save the file…</string>
     <string name="error_happened_when_securing_offeror_photo">There is an error when trying to secure your photo…</string>
     <string name="user_is_in_commented_session_during_signing">You are reviewing commented pages, double click anywhere to edit or proceed signing.</string>
+    <string name="download_full_contract">Download Full Contract</string>
+    <string name="downloading_full_contract">Trying to download full signed contract…</string>
+    <string name="download_full_contract_success">Downloaded</string>
+    <string name="download_full_contract_failed">Download failed</string>
+    <string name="verify_contract">Verify Contract</string>
+    <string name="verifying_contract">Trying to verify contract locally…</string>
+    <string name="verify_contract_failure">Verification Failed</string>
+    <string name="verify_contract_success">Verification Success</string>
+    <string name="full_contract_is_not_downloaded">You need to first download the signed full contract</string>
 </resources>

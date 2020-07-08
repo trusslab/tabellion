@@ -41,7 +41,7 @@ import java.util.List;
 /*
 Created Date: 01/31/2019
 Created By: Myles Liu
-Last Modified: 03/22/2020
+Last Modified: 06/13/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -51,8 +51,9 @@ public class Connection {
 
     //private static final String mainUriTag = "http://128.195.54.65/OneAppTestVersion/";
     //private static final String mainUriTag = "http://13.90.224.167/OneAppTestVersion/";
-    //private static final String mainUriTag = "http://13.90.224.167/OpenSourceTestVersion/tabellion/TabellionServer/";
-    private static final String mainUriTag = "http://168.62.39.118/tabellion/TabellionServer/";
+    // private static final String mainUriTag = "http://13.90.224.167/OpenSourceTestVersion/tabellion/TabellionServer/";
+    // private static final String mainUriTag = "http://168.62.39.118/tabellion/TabellionServer/";
+    private static final String mainUriTag = "http://13.90.224.167/tabellion_com/tabellion_com/TabellionServer/";
     private static final String TAG = "Connection ";
 
     private Context sContext;
@@ -294,13 +295,16 @@ public class Connection {
         private String lastName;
         private String emailAddress;
         private String password;
+        private Integer numOfFingersToBeVerified;
 
-        public RegisterNewUser(Handler handler, String firstName, String lastName, String emailAddress, String password){
+        public RegisterNewUser(Handler handler, String firstName, String lastName,
+                               String emailAddress, String password, int numOfFingersToBeVerified){
             this.handler = handler;
             this.firstName = firstName;
             this.lastName = lastName;
             this.emailAddress = emailAddress;
             this.password = password;
+            this.numOfFingersToBeVerified = numOfFingersToBeVerified;
             Log.d(TAG, "RegisterNewUser: We got the info and is going to register: " + emailAddress);
         }
 
@@ -319,7 +323,8 @@ public class Connection {
                         new StringPart("firstname", firstName),
                         new StringPart("lastname", lastName),
                         new StringPart("password", password),
-                        new StringPart("token", myApp.getToken())
+                        new StringPart("token", myApp.getToken()),
+                        new StringPart("num_of_fingers_to_be_verified", numOfFingersToBeVerified.toString())
                 };
                 com.android.internal.http.multipart.MultipartEntity multipartEntity =
                         new com.android.internal.http.multipart.MultipartEntity(parts);
@@ -1876,6 +1881,88 @@ public class Connection {
                 Message message = new Message();
                 message.setData(bundle);
                 handler.sendMessage(message);
+
+            } catch (MalformedURLException e){
+                e.printStackTrace();
+            } catch (IOException e){
+                e.printStackTrace();
+            } finally {
+                if(connection != null){
+                    connection.disconnect();
+                }
+            }
+        }
+    }
+
+    public class UploadAndAnalyzeGesture implements Runnable {
+
+        private String pathOfPhoto;
+        private String pathOfSignature;
+        //private String contractName;
+        private String timeInterval;
+        private String userEmail;
+        private Handler handler;
+        private int numOfFingersNeeded;
+
+        public UploadAndAnalyzeGesture(String pathOfPhoto, String pathOfSignature,
+                                       String timeInterval, String userEmail, Handler handler,
+                                       int numOfFingersNeeded){
+            this.pathOfPhoto = pathOfPhoto;
+            this.pathOfSignature = pathOfSignature;
+            //this.contractName = contractName;
+            this.timeInterval = timeInterval;
+            this.userEmail = userEmail;
+            this.handler = handler;
+            this.numOfFingersNeeded = numOfFingersNeeded;
+        }
+
+        @Override
+        public void run() {
+            File imageFile = new File(pathOfPhoto);
+            File signatureFile = new File(pathOfSignature);
+
+            HttpURLConnection connection = null;
+
+            try {
+                Part[] parts = {
+                        //new StringPart("contractname", contractName),
+                        new StringPart("timeinterval", timeInterval),
+                        new StringPart("useremail", userEmail),
+                        new FilePart("file", imageFile),
+                        new FilePart("signature", signatureFile)
+                };
+                com.android.internal.http.multipart.MultipartEntity multipartEntity =
+                        new com.android.internal.http.multipart.MultipartEntity(parts);
+
+                URL url = new URL(mainUriTag + "upload_and_count_photo_taken_by_user_external.php");
+                connection = (HttpURLConnection) url.openConnection();
+                connection.setRequestMethod("POST");
+                connection.setUseCaches(false);
+                connection.setDoInput(true);
+                connection.setDoOutput(true);
+
+                connection.setRequestProperty("Connection", "Keep-Alive");
+                connection.addRequestProperty("Content-length", multipartEntity.getContentLength()+"");
+                connection.addRequestProperty(multipartEntity.getContentType().getName(),
+                        multipartEntity.getContentType().getValue());
+
+                multipartEntity.writeTo(connection.getOutputStream());
+                connection.getOutputStream().close();
+
+                BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                connection.connect();
+
+                String line = "";
+                Bundle bundle = new Bundle();
+                while ((line = reader.readLine()) != null) {
+                    Log.d(TAG, "UploadAndAnalyzeGesture: " + line);
+                    if(line.contains(String.valueOf(numOfFingersNeeded))){
+                        bundle.putBoolean("is_success", true);
+                    }
+                }
+                Message msg = new Message();
+                msg.setData(bundle);
+                handler.sendMessage(msg);
 
             } catch (MalformedURLException e){
                 e.printStackTrace();

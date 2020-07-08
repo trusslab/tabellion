@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.exifinterface.media.ExifInterface;
 
+import com.camerakit.CameraKit;
 import com.camerakit.CameraKitView;
 
 import java.io.BufferedInputStream;
@@ -35,7 +36,7 @@ import java.util.Objects;
 /*
 Created Date: 07/01/2019
 Created By: Myles Liu
-Last Modified: 03/22/2020
+Last Modified: 06/11/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -89,15 +90,19 @@ public class TakePhoto extends AppCompatActivity {
         confirmButton = (ImageView) findViewById(R.id.activity_take_photo_confirm);
         cancelButton = (ImageView) findViewById(R.id.activity_take_photo_cancel);
 
+        /*
         receivedIntent = getIntent();
         // requestcode: 1 means offeror of 3rd party's app want to take a photo using this activity
-        if(receivedIntent.getStringExtra("requestcode").equals("1")){
+        if(Objects.requireNonNull(receivedIntent.getStringExtra("requestcode")).equals("1")){
             setUpContractRelated();
         }
+        */
 
         setUpCameraGestureListener();
         setUpShutterButton();
         setUpConfirmAndCancelButton();
+
+        cameraKitView.setFacing(CameraKit.FACING_FRONT);
 
         hideSystemUI();
         hideToolbar();
@@ -151,12 +156,12 @@ public class TakePhoto extends AppCompatActivity {
     }
 
     private void startUploadingAndVerification(){
-        showProgressDialog(getString(R.string.offeror_upload_photo_msg));
+        showProgressDialog(getString(R.string.verifying_gesture));
         Handler handler = new Handler(new Handler.Callback() {
             @Override
             public boolean handleMessage(Message msg) {
                 if(!msg.getData().getBoolean("is_success")){
-                    Toast.makeText(context, R.string.error_happened_when_securing_offeror_photo, Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, R.string.gesture_verify_failure, Toast.LENGTH_LONG).show();
                     finish();
                     return false;
                 }
@@ -167,9 +172,9 @@ public class TakePhoto extends AppCompatActivity {
                 return true;
             }
         });
-        new Thread(new Connection(context, myApp).new UploadAndVerifyPhotoTakenByUser(pathOfLastSavedImage,
+        new Thread(new Connection(context, myApp).new UploadAndAnalyzeGesture(pathOfLastSavedImage,
                 pathOfLastSavedSignature, lastCapturedInterval,
-                myApp.getEmailAddress(), handler)).start();
+                myApp.getEmailAddress(), handler, 3)).start();
     }
 
     private void showProgressDialog(String text){

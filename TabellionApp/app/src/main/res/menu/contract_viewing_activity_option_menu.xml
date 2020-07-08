@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/contract_viewing_activity_option_menu_download_full_contract"
+        android:title="@string/download_full_contract" >
+    </item>
+
+    <item android:id="@+id/contract_viewing_activity_option_menu_verify_contract"
+        android:title="@string/verify_contract" >
+    </item>
+
+</menu>

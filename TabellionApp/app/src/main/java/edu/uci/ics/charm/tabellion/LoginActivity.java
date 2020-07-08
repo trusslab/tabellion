@@ -63,7 +63,7 @@ import static android.Manifest.permission.READ_CONTACTS;
 /*
 Created Date: 02/12/2019
 Created By: Myles Liu
-Last Modified: 03/22/2020
+Last Modified: 06/14/2020
 Last Modified By: Myles Liu
 Notes:
  */
@@ -168,6 +168,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         });
 
         myApp.getCurrentTimeInterval();
+
+        // For testing gesture detection or uploading secure photo or external secure photo request
+        //startActivity(new Intent(context, TakePhoto.class));
 
         // For debug
         //myApp.getToken();

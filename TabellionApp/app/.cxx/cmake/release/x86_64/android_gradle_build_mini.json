@@ -1,19 +1,19 @@
 {
   "buildFiles": [
     "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\platforms.cmake",
-    "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
     "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake"
   ],
   "cleanCommands": [
-    "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\release\\x86_64\" clean"
+    "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\release\\x86_64\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\release\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\release\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "xmd-actions-Release-x86_64": {
       "artifactName": "xmd-actions",
-      "buildCommand": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\release\\x86_64\" xmd-actions",
+      "buildCommand": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\release\\x86_64\" xmd-actions",
       "abi": "x86_64",
-      "output": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\build\\intermediates\\cmake\\release\\obj\\x86_64\\libxmd-actions.so"
+      "output": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\build\\intermediates\\cmake\\release\\obj\\x86_64\\libxmd-actions.so"
     }
   }
 }

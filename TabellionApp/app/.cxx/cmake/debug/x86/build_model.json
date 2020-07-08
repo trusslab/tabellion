@@ -5,9 +5,9 @@
     "environmentVariables": []
   },
   "cmake": {
-    "cmakeArtifactsBaseFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\debug\\x86",
-    "cmakeServerLogFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\debug\\x86\\cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cxx\\debug\\x86",
+    "cmakeArtifactsBaseFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\debug\\x86",
+    "cmakeServerLogFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\debug\\x86\\cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cxx\\debug\\x86",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -15,10 +15,14 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\debug\\x86",
+      "buildRoot": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\debug\\x86",
       "cmakeToolchain": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
       "cmakeExecutable": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
       "variables": [
+        {
+          "name": "CMAKE_FIND_ROOT_PATH",
+          "value": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\debug\\prefab\\x86\\prefab"
+        },
         {
           "name": "CMAKE_BUILD_TYPE",
           "value": "Debug"
@@ -53,7 +57,7 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\build\\intermediates\\cmake\\debug\\obj\\x86"
+          "value": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\build\\intermediates\\cmake\\debug\\obj\\x86"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
@@ -70,14 +74,14 @@
       ]
     }
   },
-  "cxxBuildFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\debug\\x86",
+  "cxxBuildFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\debug\\x86",
   "info": {
     "abi": "X86",
     "bitness": 32,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx\\cmake\\debug\\x86",
+  "originalCxxBuildFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\debug\\x86",
   "variant": {
     "buildSystemArgumentList": [],
     "buildTargetSet": [],
@@ -95,12 +99,12 @@
         "ninjaExe": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
       },
       "cmakeToolchainFile": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
-      "cxxFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\.cxx",
+      "cxxFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx",
       "gradleModulePathName": ":app",
-      "intermediatesFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\build\\intermediates",
-      "makeFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
-      "moduleBuildFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\build.gradle",
-      "moduleRootFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app",
+      "intermediatesFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\build\\intermediates",
+      "makeFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\src\\main\\cpp\\CMakeLists.txt",
+      "moduleBuildFile": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\build.gradle",
+      "moduleRootFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
@@ -161,15 +165,17 @@
         "X86",
         "X86_64"
       ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
       "ndkVersion": "21.0.6113669",
       "project": {
-        "compilerSettingsCacheFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\.cxx",
-        "cxxFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\.cxx",
+        "compilerSettingsCacheFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\.cxx",
+        "cxxFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\.cxx",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp",
-        "sdkFolder": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk"
+        "rootBuildGradleFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp",
+        "sdkFolder": "C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk",
+        "isPrefabEnabled": false
       },
       "splitsAbiFilterSet": [],
       "stlSharedObjectMap": {
@@ -184,13 +190,16 @@
         "SYSTEM": {}
       }
     },
-    "objFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Research\\DocumentSign_Research\\open_source\\TabellionApp\\app\\build\\intermediates\\cmake\\debug\\obj",
+    "objFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\build\\intermediates\\cmake\\debug\\obj",
     "variantName": "debug",
     "validAbiList": [
       "ARMEABI_V7A",
       "ARM64_V8A",
       "X86",
       "X86_64"
-    ]
-  }
+    ],
+    "prefabDirectory": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\debug\\prefab",
+    "prefabPackageDirectoryList": []
+  },
+  "prefabFolder": "C:\\Users\\lyx98\\OneDrive\\Documents\\UCI\\Projects\\Tabellion\\Tabellion-com\\TabellionApp\\app\\.cxx\\cmake\\debug\\prefab\\x86"
 }

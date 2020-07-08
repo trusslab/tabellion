@@ -51,15 +51,26 @@
         app:layout_constraintTop_toBottomOf="@+id/contract_viewing_contract_preview_image" />
 
     <TextView
+        android:id="@+id/contract_viewing_contract_offeror_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="13dp"
+        android:text="From:..."
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contract_viewing_contract_description" />
+
+    <TextView
         android:id="@+id/contract_viewing_contract_offeree_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:layout_marginTop="13dp"
-        android:text="TextView"
+        android:text="To:..."
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contract_viewing_contract_description" />
+        app:layout_constraintTop_toBottomOf="@+id/contract_viewing_contract_offeror_email" />
 
     <Button
         android:id="@+id/contract_viewing_revoke_or_reject"

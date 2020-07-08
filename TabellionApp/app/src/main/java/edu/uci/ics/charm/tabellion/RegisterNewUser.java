@@ -1,8 +1,10 @@
 package edu.uci.ics.charm.tabellion;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.app.KeyguardManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -44,6 +46,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.UnrecoverableKeyException;
 import java.security.cert.CertificateException;
+import java.util.Random;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -59,7 +62,7 @@ import kotlin.jvm.functions.Function0;
 /*
 Created Date: 02/12/2019
 Created By: Myles Liu
-Last Modified: 03/22/2020
+Last Modified: 06/14/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -103,6 +106,9 @@ public class RegisterNewUser extends AppCompatActivity implements Callback{
 
     private Handler handlerForRegistering;
     private boolean isRegistered = false;
+
+    // For gesture verification
+    private int numOfFingersRequired = 0;
 
     private void lockEmailEditText(){
         emailEditText.setFocusable(false);
@@ -210,7 +216,9 @@ public class RegisterNewUser extends AppCompatActivity implements Callback{
                     }
                     finish();
                 } else {
-                    Toast.makeText(context, R.string.unknown_error, Toast.LENGTH_LONG).show();
+                    // Toast.makeText(context, R.string.unknown_error, Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, R.string.something_recoverable_went_wrong, Toast.LENGTH_LONG).show();
+                    // showPromptForGestureVerificationAndProceedTakingPhoto();
                     circularProgressButton.revertAnimation(new Function0<Unit>() {
                         @Override
                         public Unit invoke() {
@@ -249,7 +257,7 @@ public class RegisterNewUser extends AppCompatActivity implements Callback{
                     Connection connection = new Connection(context, myApp);
                     new Thread(connection.new RegisterNewUser(handlerForRegistering, firstNameEditText.getText().toString(),
                             lastNameEditText.getText().toString(), emailEditText.getText().toString(),
-                            passwordEditText.getText().toString())).start();
+                            passwordEditText.getText().toString(), numOfFingersRequired)).start();
 
                 } else {
                     Toast.makeText(context, R.string.unknown_error, Toast.LENGTH_LONG).show();
@@ -339,7 +347,7 @@ public class RegisterNewUser extends AppCompatActivity implements Callback{
                     });
                     unlockEverything();
                 } else {
-                    grantCameraPermissionAndDispatchPhotoTaking();
+                    showPromptForGestureVerificationAndProceedTakingPhoto();
                 }
             }
         });
@@ -360,6 +368,24 @@ public class RegisterNewUser extends AppCompatActivity implements Callback{
         executor = Executors.newSingleThreadExecutor();
         fragmentActivity = this;
 
+    }
+
+    private void showPromptForGestureVerificationAndProceedTakingPhoto(){
+        AlertDialog.Builder promptForGestureDialogBuilder = new AlertDialog.Builder(context);
+        promptForGestureDialogBuilder.setTitle(R.string.title_of_prompt_for_showing_fingers);
+        numOfFingersRequired = new Random().nextInt(6); // Max 5 fingers
+        // numOfFingersRequired = 2;   // For demo only; since paper exactly says 2 fingers
+        promptForGestureDialogBuilder.setMessage(
+                String.format(getString(R.string.prompt_for_showing_fingers), numOfFingersRequired));
+        promptForGestureDialogBuilder.setCancelable(false);
+        promptForGestureDialogBuilder.setPositiveButton(R.string.ok,
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        grantCameraPermissionAndDispatchPhotoTaking();
+                    }
+                });
+        promptForGestureDialogBuilder.create().show();
     }
 
     private boolean checkIfAnyBlank(){

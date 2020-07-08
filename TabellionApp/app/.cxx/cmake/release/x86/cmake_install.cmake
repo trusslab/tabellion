@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/lyx98/OneDrive/Documents/UCI/Research/DocumentSign_Research/open_source/TabellionApp/app/src/main/cpp
+# Install script for directory: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/src/main/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/lyx98/OneDrive/Documents/UCI/Research/DocumentSign_Research/open_source/TabellionApp/app/.cxx/cmake/release/x86/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/release/x86/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

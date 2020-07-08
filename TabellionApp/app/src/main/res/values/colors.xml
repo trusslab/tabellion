@@ -8,4 +8,5 @@
     <color name="colorPendingSignContractItemBackground">#ffffff</color>
     <color name="colorFinish">#38ff4b</color>
     <color name="transparent">#00000000</color>
+    <color name="linkableTextViewColor">#3464eb</color>
 </resources>

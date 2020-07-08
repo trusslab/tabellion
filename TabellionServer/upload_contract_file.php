@@ -6,6 +6,8 @@ if(isset($_FILES['file'])){
 
 	$old_umask = umask(0);
 	mkdir("./submitted_files/$contract_id", 0777);
+	mkdir("./submitted_files/$contract_id/offeror_info", 0777);
+	mkdir("./submitted_files/$contract_id/offeree_info", 0777);
 	umask($old_umask);
 
 	$target_path = "submitted_files/$contract_id/"; //here folder name 

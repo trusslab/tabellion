@@ -10,16 +10,25 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.util.Log;
 
+import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
+import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;
+import org.apache.commons.compress.utils.IOUtils;
+
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.channels.FileChannel;
+import java.util.jar.JarEntry;
+import java.util.jar.JarInputStream;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 
 /*
 Created Date: 02/05/2019
 Created By: Myles Liu
-Last Modified: 03/22/2020
+Last Modified: 05/01/2020
 Last Modified By: Myles Liu
 Notes:
 
@@ -28,6 +37,7 @@ Notes:
 public class FileOperation {
 
     private static final String TAG = "FileOperation";
+    private static final int BUFFER_SIZE = 4096;
 
     public static String getPathFromUri(final Context context, final Uri uri) {
 
@@ -237,4 +247,68 @@ public class FileOperation {
     public static boolean isGooglePhotosUri(Uri uri) {
         return "com.google.android.apps.photos.content".equals(uri.getAuthority());
     }
+
+    public static void untar(String zipFilePath, String destDirectory) throws IOException {
+        File destDir = new File(destDirectory);
+        if (!destDir.exists()) {
+            destDir.mkdirs();
+        }
+        decompress(zipFilePath, destDir);
+        /*
+        File tempTarFile = new File(zipFilePath);
+        Log.d(TAG, "untar: the zipFilePath is: " + zipFilePath + "; and the dest is: " + destDirectory + "; is tar file existed: " + tempTarFile.exists());
+        File[] tempTarFileList = tempTarFile.listFiles();
+        if(tempTarFileList != null){
+            for (File file: tempTarFileList){
+                Log.d(TAG, "untar: listOfFiles in tar is: " + file.getName());
+            }
+        }
+        TarArchiveInputStream zipIn = new TarArchiveInputStream(new FileInputStream(zipFilePath));
+        TarArchiveEntry entry = zipIn.getNextTarEntry();
+        // iterates over entries in the zip file
+        while (entry != null) {
+            Log.d(TAG, "untar: the entry name is: " + entry.getName());
+            String filePath = destDirectory + File.separator + entry.getName();
+            if (!entry.isDirectory()) {
+                // if the entry is a file, extracts it
+                extractFile(zipIn, filePath);
+            } else {
+                // if the entry is a directory, make the directory
+                File dir = new File(filePath);
+                dir.mkdir();
+            }
+            zipIn.close();
+            entry = zipIn.getNextTarEntry();
+        }
+        zipIn.close();
+        */
+    }
+
+    private static void extractFile(TarArchiveInputStream zipIn, String filePath) throws IOException {
+        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath));
+        byte[] bytesIn = new byte[BUFFER_SIZE];
+        int read = 0;
+        while ((read = zipIn.read(bytesIn)) != -1) {
+            bos.write(bytesIn, 0, read);
+        }
+        bos.close();
+    }
+
+    public static void decompress(String in, File out) throws IOException {
+        try (TarArchiveInputStream fin = new TarArchiveInputStream(new FileInputStream(in))){
+            TarArchiveEntry entry;
+            while ((entry = fin.getNextTarEntry()) != null) {
+                if (entry.isDirectory()) {
+                    continue;
+                }
+                File curfile = new File(out, entry.getName());
+                File parent = curfile.getParentFile();
+                if (!parent.exists()) {
+                    parent.mkdirs();
+                }
+                IOUtils.copy(fin, new FileOutputStream(curfile));
+            }
+        }
+    }
+
 }

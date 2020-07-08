@@ -3,7 +3,7 @@ package edu.uci.ics.charm.tabellion;
 /*
 Created Date: 01/23/2019
 Created By: Myles Liu
-Last Modified: 03/22/2020
+Last Modified: 05/01/2020
 Last Modified By: Myles Liu
 Notes:
         1. For currentRole, 0 means offeror, 1 means offeree.  (Default is 0)
@@ -64,6 +64,7 @@ public class Contract {
     private Set<Integer> pendingToDownalodReviewPagesNum = new HashSet<>();
     private boolean isDownloaded = false;
     private boolean isDownloadFailed = false;
+    private boolean isSignedFullContractDownloaded = false;
     private File contractFile = null;
     private int totalImageNums = 0;
     private int confirmStatus = 0;
@@ -145,6 +146,7 @@ public class Contract {
         this.pendingToDownalodReviewPagesNum.addAll(contractForCopy.pendingToDownalodReviewPagesNum);
         this.isDownloaded = contractForCopy.isDownloaded;
         this.isDownloadFailed = contractForCopy.isDownloadFailed;
+        this.isSignedFullContractDownloaded = contractForCopy.isSignedFullContractDownloaded;
         this.contractFile = new File(contractForCopy.contractFile.getAbsolutePath());
         this.totalImageNums = contractForCopy.totalImageNums;
         this.confirmStatus = contractForCopy.confirmStatus;
@@ -273,13 +275,16 @@ public class Contract {
 
     public void syncStatus(Contract contractUsedToSync){
         // Should only be used for internal contract
-        // Direction: this: local contract; contractUsedToSync: online contract
+        // Direction: this: local contract; contractUsedToSync: online/new contract
         Log.d(TAG, "syncStatus: This function should only be called for internal use.");
         setContractDescription(contractUsedToSync.getContractDescription());
         setContractStatus(contractUsedToSync.getContractStatus());
         if(!isDownloaded){
             setTotalImageNums(contractUsedToSync.getTotalImageNums());
             addRangePendingToDownloadPagesNum(2, contractUsedToSync.getTotalImageNums());
+        }
+        if(contractUsedToSync.isSignedFullContractDownloaded()){
+            setSignedFullContractDownloaded(true);
         }
         setOfferorEmailAddress(contractUsedToSync.getOfferorEmailAddress());
         setOffereeEmailAddress(contractUsedToSync.getOffereeEmailAddress());
@@ -867,5 +872,13 @@ public class Contract {
 
     public void setRevistedNumCount(int revistedNumCount) {
         this.revistedNumCount = revistedNumCount;
+    }
+
+    public boolean isSignedFullContractDownloaded() {
+        return isSignedFullContractDownloaded;
+    }
+
+    public void setSignedFullContractDownloaded(boolean signedFullContractDownloaded) {
+        isSignedFullContractDownloaded = signedFullContractDownloaded;
     }
 }

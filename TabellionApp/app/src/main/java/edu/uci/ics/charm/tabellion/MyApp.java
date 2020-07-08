@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.nfc.Tag;
 import android.os.Environment;
 import android.util.Base64;
 import android.util.Log;
@@ -16,10 +17,14 @@ import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import org.apache.commons.compress.utils.IOUtils;
+
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -89,6 +94,7 @@ public class MyApp extends Application {
         if(savedContractList == null){
             return new ArrayList<>();
         }
+        Log.d(TAG, "getSavedContractList: reading mainTag: " + mainTag + "; subTag: " + subTag + "; num of contracts: " + savedContractList.size());
         return savedContractList;
     }
 
@@ -457,7 +463,7 @@ public class MyApp extends Application {
         return new String(Base64.encode(privateKey.getEncoded(), 0));
     }
 
-    private PublicKey getPublicKeyFromString(String keystr) throws Exception{
+    public PublicKey getPublicKeyFromString(String keystr) throws Exception{
         byte [] encoded = Base64.decode(keystr, 0);
         X509EncodedKeySpec keySpec = new X509EncodedKeySpec(encoded);
         KeyFactory kf = KeyFactory.getInstance("RSA");
@@ -505,6 +511,28 @@ public class MyApp extends Application {
     private void savePublicKeyToFile(){
         String pubKeyToSave = "-----BEGIN PUBLIC KEY-----\n" + getStringFromPublicKey(publicKey) + "-----END PUBLIC KEY-----\n";
         writeStringToFile(pubKeyToSave, "publicKey.pem", "");
+    }
+
+    public boolean verifySignatureWithPublicKey(String pathOfPubKey, String pathOfSignature, String pathOfFile) throws Exception {
+        // Read PublicKey
+        String pubKeyStr = getStringFromFile(pathOfPubKey);
+        pubKeyStr = pubKeyStr.replace("-----BEGIN PUBLIC KEY-----\n", "");
+        pubKeyStr = pubKeyStr.replace("-----END PUBLIC KEY-----\n", "");
+
+        // Log.d(TAG, "verifySignatureWithPublicKey: pubKeyStr: " + pubKeyStr);
+        PublicKey pubKey = getPublicKeyFromString(pubKeyStr);
+
+        // Read Signature
+        byte[] signData = Base64.decode(getStringFromFile(pathOfSignature), 0);
+
+        // Read File
+        byte[] fileData = readFileAsByteArray(pathOfFile);
+
+        // Verify
+        Signature signature = Signature.getInstance("SHA256withRSA");
+        signature.initVerify(pubKey);
+        signature.update(fileData);
+        return signature.verify(signData);
     }
 
     public static String convertStreamToString(InputStream is) throws Exception {
@@ -623,6 +651,7 @@ public class MyApp extends Application {
         contractIDs.addAll(getAllContractIDsFromList(getSavedPendingToSignContractList()));
         contractIDs.addAll(getAllContractIDsFromList(getSavedInProgressContractList()));
         contractIDs.addAll(getAllContractIDsFromList(getSavedHistoryContractList()));
+        Log.d(TAG, "getAllContractIDs: the contractIDs are: " + contractIDs);
         return contractIDs;
     }
 
@@ -712,7 +741,7 @@ public class MyApp extends Application {
         return Uri.parse(getExternalFilesDir(Environment.DIRECTORY_PICTURES) + "/" + getCurrentUserPhotoFileName());
     }
 
-    private Bitmap getImageFromLocal(String filepath){
+    public Bitmap getImageFromLocal(String filepath){
         File imageFile = new File(filepath);
         Log.d(TAG, "getImageFromLocal: the path is: " + imageFile.getAbsolutePath() + " with the size of: " + imageFile.getTotalSpace());
         return BitmapFactory.decodeFile(imageFile.getPath());
@@ -906,5 +935,23 @@ public class MyApp extends Application {
             return gson.fromJson(dataToBeRead, objectType);
         }
         return null;
+    }
+
+    private byte[] readFileAsByteArray(String path){
+        File file = new File(path);
+        int size = (int) file.length();
+        byte[] bytes = new byte[size];
+        try {
+            BufferedInputStream buf = new BufferedInputStream(new FileInputStream(file));
+            buf.read(bytes, 0, bytes.length);
+            buf.close();
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return bytes;
     }
 }

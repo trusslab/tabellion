@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/contract_post_viewer_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/contract_post_viewer_linearLayout_overlap_review_note"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@id/contract_post_viewer_imageView"
+        android:layout_margin="4dp"
+        android:background="@color/design_default_color_secondary"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_mark"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/black"
+            android:text="@string/user_is_in_review_session_during_signing"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

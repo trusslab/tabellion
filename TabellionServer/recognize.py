@@ -203,10 +203,14 @@ if __name__ == "__main__":
         # count the number of fingers
         fingers = count(thresholded, segmented, clone)
 
+        print fingers
+
         cv2.putText(clone, str(fingers), (70, 45), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2)
         
         # show the thresholded image
         #cv2.imshow("Thesholded", thresholded)
+    else:
+        print "no hand is detected..."
 
     # draw the segmented hand
     cv2.rectangle(clone, (left, top), (right, bottom), (0,255,0), 2)

@@ -20,7 +20,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="edu.uci.ics.charm.tabellion.MyApp"
+        android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -29,13 +29,14 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:label,android:theme">
-        <activity android:name="edu.uci.ics.charm.tabellion.CommentActivity"></activity>
-        <activity android:name="edu.uci.ics.charm.tabellion.CreateAndEditContract" />
+        <activity android:name=".ContractPostViewerActivity"></activity>
+        <activity android:name=".CommentActivity" />
+        <activity android:name=".CreateAndEditContract" />
         <activity
-            android:name="edu.uci.ics.charm.tabellion.TakePhoto"
+            android:name=".TakePhoto"
             android:exported="true" />
         <activity
-            android:name="edu.uci.ics.charm.tabellion.LauncherActivity"
+            android:name=".LauncherActivity"
             android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,23 +46,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="edu.uci.ics.charm.tabellion.SigningActivity"
+            android:name=".SigningActivity"
             android:theme="@style/AppFullScreenTheme" />
         <activity
-            android:name="edu.uci.ics.charm.tabellion.LoginActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:label="@string/title_activity_login" />
         <activity
-            android:name="edu.uci.ics.charm.tabellion.RegisterNewUser"
+            android:name=".RegisterNewUser"
             android:label="@string/title_activity_register_new_user"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="edu.uci.ics.charm.tabellion.ContractViewingActivity" />
+        <activity android:name=".ContractViewingActivity" />
         <activity
-            android:name="edu.uci.ics.charm.tabellion.NewDocument"
+            android:name=".NewDocument"
             android:label="@string/title_activity_new_document"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="edu.uci.ics.charm.tabellion.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
 
@@ -75,7 +76,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <service android:name="edu.uci.ics.charm.tabellion.MyFirebaseMessagingService">
+        <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

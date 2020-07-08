@@ -87,7 +87,7 @@ public class ContractAdapter extends RecyclerView.Adapter<ContractAdapter.ViewHo
         holder.contractView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(myApp.isRefreshingOnMainActivity()){
+                if(myApp.isRefreshingOnMainActivity() || holder.getAdapterPosition() < 0){
                     Toast.makeText(context, R.string.wait_for_contracts_to_be_updated, Toast.LENGTH_SHORT).show();
                     return;
                 }

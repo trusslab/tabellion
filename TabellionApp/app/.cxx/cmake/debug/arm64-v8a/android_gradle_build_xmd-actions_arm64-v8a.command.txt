@@ -1,7 +1,7 @@
 Executable : C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
 arguments : 
 -C
-C:\Users\lyx98\OneDrive\Documents\UCI\Research\DocumentSign_Research\open_source\TabellionApp\app\.cxx\cmake\debug\arm64-v8a
+C:\Users\lyx98\OneDrive\Documents\UCI\Projects\Tabellion\Tabellion-com\TabellionApp\app\.cxx\cmake\debug\arm64-v8a
 xmd-actions
 jvmArgs : 
 

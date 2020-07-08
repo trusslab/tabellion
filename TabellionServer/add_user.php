@@ -7,6 +7,10 @@ if(isset($_FILES['file'])){
     $last_name = $_POST['lastname'];
     $password = $_POST['password'];
     $token = $_POST['token'];
+    $num_of_fingers_to_be_verified_str = $_POST["num_of_fingers_to_be_verified"];
+    $num_of_fingers_to_be_verified = (int)$num_of_fingers_to_be_verified_str;
+
+    $able_to_proceed_registering_user = TRUE;
 
     $file_name = $_POST['filename'];
 
@@ -45,11 +49,25 @@ if(isset($_FILES['file'])){
         echo "User Photo Upload Success!";
 
     } else {
-    echo "There was an error uploading the file, please try again!";
+        echo "There was an error uploading the file, please try again!";
+        $able_to_proceed_registering_user = FALSE;
     }
 
-    $log_msg = shell_exec("python3 add_user.py $email_address $first_name $last_name $password $token");
+    if($able_to_proceed_registering_user == TRUE){
+        $fingers_str = shell_exec("python recognize.py users/user_photos/$file_name 2>&1");
+        $fingers = (int)$fingers_str;
+        echo "Gesture verification result --- Require finger number: $num_of_fingers_to_be_verified, actual finger number: $fingers";
+        if($fingers != $num_of_fingers_to_be_verified){
+            echo "Gesture verification failed! Require finger number: $num_of_fingers_to_be_verified, but actual finger number: $fingers";
+            $able_to_proceed_registering_user = FALSE;
+        }
+    }
 
-    echo $log_msg;
+    if($able_to_proceed_registering_user == TRUE){
+        $log_msg = shell_exec("python3 add_user.py $email_address $first_name $last_name $password $token");
+
+        echo $log_msg;
+    }
+
 }
 ?>
