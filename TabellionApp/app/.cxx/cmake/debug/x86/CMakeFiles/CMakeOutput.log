@@ -1,19 +1,19 @@
 The target system is: Android - 1 - i686
 The host system is: Windows - 10.0.19041 - AMD64
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_41d0d"
-[1/2] Building C object CMakeFiles/cmTC_41d0d.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_41d0d
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_ff136"
+[1/2] Building C object CMakeFiles/cmTC_ff136.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_ff136
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_c3400"
-[1/2] Building C object CMakeFiles/cmTC_c3400.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_c3400
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_11de2"
+[1/2] Building C object CMakeFiles/cmTC_11de2.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_11de2
 Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)
 Target: i686-none-linux-android23
 Thread model: posix
@@ -24,16 +24,16 @@ Selected GCC installation: C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/t
 Candidate multilib: .;@m32
 Selected multilib: .;@m32
 Found CUDA installation: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1, version 10.1
- "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z noexecstack --warn-shared-textrel -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_c3400 "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtbegin_dynamic.o" "-LC:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386" -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23 -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_c3400.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtend_android.o"
+ "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z noexecstack --warn-shared-textrel -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_11de2 "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtbegin_dynamic.o" "-LC:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386" -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23 -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_11de2.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtend_android.o"
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_c3400"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_c3400.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_c3400]
+  ignore line: [Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_11de2"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_11de2.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_11de2]
   ignore line: [Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)]
   ignore line: [Target: i686-none-linux-android23]
   ignore line: [Thread model: posix]
@@ -46,7 +46,7 @@ Parsed C implicit link information from above output:
   ignore line: [Selected multilib: .]
   ignore line: [@m32]
   ignore line: [Found CUDA installation: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1, version 10.1]
-  link line: [ "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z noexecstack --warn-shared-textrel -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_c3400 "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtbegin_dynamic.o" "-LC:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386" -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23 -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_c3400.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtend_android.o"]
+  link line: [ "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z noexecstack --warn-shared-textrel -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_11de2 "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtbegin_dynamic.o" "-LC:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386" -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23 -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_11de2.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtend_android.o"]
     arg [C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld] ==> ignore
     arg [--sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
@@ -62,7 +62,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_c3400] ==> ignore
+    arg [cmTC_11de2] ==> ignore
     arg [C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtbegin_dynamic.o] ==> ignore
     arg [-LC:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386] ==> dir [C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386]
     arg [-LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
@@ -78,7 +78,7 @@ Parsed C implicit link information from above output:
     arg [--fatal-warnings] ==> ignore
     arg [--no-undefined] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_c3400.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_11de2.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
@@ -99,11 +99,11 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_2430c"
-[1/2] Building C object CMakeFiles/cmTC_2430c.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_2430c
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_c3466"
+[1/2] Building C object CMakeFiles/cmTC_c3466.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_c3466
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -113,11 +113,11 @@ Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_ef36b"
-[1/2] Building C object CMakeFiles/cmTC_ef36b.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_ef36b
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_d9224"
+[1/2] Building C object CMakeFiles/cmTC_d9224.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_d9224
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -127,11 +127,11 @@ Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_8fb7a"
-[1/2] Building C object CMakeFiles/cmTC_8fb7a.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_8fb7a
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_9251f"
+[1/2] Building C object CMakeFiles/cmTC_9251f.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_9251f
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -139,19 +139,19 @@ Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_19301"
-[1/2] Building CXX object CMakeFiles/cmTC_19301.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_19301
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_a6c5e"
+[1/2] Building CXX object CMakeFiles/cmTC_a6c5e.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_a6c5e
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_173de"
-[1/2] Building CXX object CMakeFiles/cmTC_173de.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_173de
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_a6e5b"
+[1/2] Building CXX object CMakeFiles/cmTC_a6e5b.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_a6e5b
 Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)
 Target: i686-none-linux-android23
 Thread model: posix
@@ -162,16 +162,16 @@ Selected GCC installation: C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/t
 Candidate multilib: .;@m32
 Selected multilib: .;@m32
 Found CUDA installation: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1, version 10.1
- "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z noexecstack --warn-shared-textrel -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_173de "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtbegin_dynamic.o" "-LC:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386" -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23 -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_173de.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtend_android.o"
+ "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z noexecstack --warn-shared-textrel -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_a6e5b "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtbegin_dynamic.o" "-LC:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386" -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23 -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_a6e5b.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtend_android.o"
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_173de"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_173de.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_173de]
+  ignore line: [Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_a6e5b"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_a6e5b.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_a6e5b]
   ignore line: [Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)]
   ignore line: [Target: i686-none-linux-android23]
   ignore line: [Thread model: posix]
@@ -184,7 +184,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [Selected multilib: .]
   ignore line: [@m32]
   ignore line: [Found CUDA installation: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1, version 10.1]
-  link line: [ "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z noexecstack --warn-shared-textrel -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_173de "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtbegin_dynamic.o" "-LC:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386" -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23 -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_173de.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtend_android.o"]
+  link line: [ "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z noexecstack --warn-shared-textrel -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_a6e5b "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtbegin_dynamic.o" "-LC:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386" -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23 -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_a6e5b.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl "C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtend_android.o"]
     arg [C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld] ==> ignore
     arg [--sysroot=C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
@@ -200,7 +200,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_173de] ==> ignore
+    arg [cmTC_a6e5b] ==> ignore
     arg [C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/23\\crtbegin_dynamic.o] ==> ignore
     arg [-LC:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386] ==> dir [C:\\Users\\lyx98\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\9.0.8\\lib\\linux\\i386]
     arg [-LC:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [C:/Users/lyx98/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
@@ -216,7 +216,7 @@ Parsed CXX implicit link information from above output:
     arg [--fatal-warnings] ==> ignore
     arg [--no-undefined] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_173de.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_a6e5b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-Bstatic] ==> ignore
     arg [-lc++] ==> lib [c++]
     arg [-Bdynamic] ==> ignore
@@ -241,11 +241,11 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_ae115"
-[1/2] Building CXX object CMakeFiles/cmTC_ae115.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_ae115
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_ca480"
+[1/2] Building CXX object CMakeFiles/cmTC_ca480.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_ca480
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -308,11 +308,11 @@ Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_5e7fb"
-[1/2] Building CXX object CMakeFiles/cmTC_5e7fb.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_5e7fb
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_c35a0"
+[1/2] Building CXX object CMakeFiles/cmTC_c35a0.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_c35a0
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -375,11 +375,11 @@ Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_b816a"
-[1/2] Building CXX object CMakeFiles/cmTC_b816a.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_b816a
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_ca43a"
+[1/2] Building CXX object CMakeFiles/cmTC_ca43a.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_ca43a
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -442,11 +442,11 @@ Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: C:/Users/lyx98/OneDrive/Documents/UCI/Projects/Tabellion/Tabellion-com/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/lyx98/Documents/Projects/tabellion/tabellion/TabellionApp/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_9a29a"
-[1/2] Building CXX object CMakeFiles/cmTC_9a29a.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_9a29a
+Run Build Command:"C:\Users\lyx98\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_00ba9"
+[1/2] Building CXX object CMakeFiles/cmTC_00ba9.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_00ba9
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
